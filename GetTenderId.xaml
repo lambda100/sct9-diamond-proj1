@@ -60,7 +60,7 @@
       <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="GetTenderId" sap:VirtualizedContainerService.HintSize="516.8,532.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="GetTenderId" sap:VirtualizedContainerService.HintSize="516.8,635.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -101,5 +101,6 @@
         </ui:BrowserScope.Body>
       </ui:BrowserScope>
     </Sequence>
+    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="475.2,62.4" sap2010:WorkflowViewState.IdRef="WriteLine_2" />
   </Sequence>
 </Activity>
