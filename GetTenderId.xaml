@@ -86,7 +86,7 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:CommentOut sap2010:Annotation.AnnotationText="This  code is to open GeBiz Page and filter to &quot;Administration &amp; Training ⇒ Courses&quot; on Opportunity page.&#xD;&#xA;&#xD;&#xA;Take note: GeBiz does not allow multiple window session open to access the same page.  To overcome it, manually close all open browsers." DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="241.6,256.8" sap2010:WorkflowViewState.IdRef="CommentOut_12">
+    <ui:CommentOut sap2010:Annotation.AnnotationText="This  code is to open GeBiz Page and filter to &quot;Administration &amp; Training ⇒ Courses&quot; on Opportunity page.&#xD;&#xA;&#xD;&#xA;Take note: GeBiz does not allow multiple window session open to access the same page.  To overcome it, manually close all open browsers. Then run the code" DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="241.6,256.8" sap2010:WorkflowViewState.IdRef="CommentOut_12">
       <ui:CommentOut.Body>
         <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="241.6,333.6" sap2010:WorkflowViewState.IdRef="Sequence_43">
           <sap:WorkflowViewStateService.ViewState>
