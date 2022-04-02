@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="GetTenderId" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="916,3600.8" sap2010:WorkflowViewState.IdRef="GetTenderId_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="GetTenderId" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="916,3616.8" sap2010:WorkflowViewState.IdRef="GetTenderId_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="34">
       <x:String>System.Activities</x:String>
@@ -68,7 +68,7 @@
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="" DisplayName="GetTenderId" sap:VirtualizedContainerService.HintSize="722.4,3536" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="" DisplayName="GetTenderId" sap:VirtualizedContainerService.HintSize="722.4,3552" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="tenderid" />
       <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
@@ -87,15 +87,15 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:CommentOut sap2010:Annotation.AnnotationText="This is code is to open GeBiz Page and filter to &quot;Administration &amp; Training ⇒ Courses&quot; on Opportunity page.&#xA;&#xA;Take note: GeBiz does not allow multiple window session open to access the same page.  To overcome need to close all browsers." DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="680.8,1127.2" sap2010:WorkflowViewState.IdRef="CommentOut_21">
+    <ui:CommentOut sap2010:Annotation.AnnotationText="This is code is to open GeBiz Page and filter to &quot;Administration &amp; Training ⇒ Courses&quot; on Opportunity page.&#xA;&#xA;Take note: GeBiz does not allow multiple window session open to access the same page.  To overcome need to close all browsers." DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="680.8,1143.2" sap2010:WorkflowViewState.IdRef="CommentOut_21">
       <ui:CommentOut.Body>
-        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="508,956.8" sap2010:WorkflowViewState.IdRef="Sequence_65">
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="508,972.8" sap2010:WorkflowViewState.IdRef="Sequence_65">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" sap2010:Annotation.AnnotationText="This is code is to open GeBiz Page and filter to &quot;Administration &amp; Training ⇒ Courses&quot; on Opportunity page.&#xA;&#xA;Take note: GeBiz does not allow multiple window session open to access the same page.  To overcome need to close all browsers." BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="466.4,864" sap2010:WorkflowViewState.IdRef="OpenBrowser_2" NewSession="True" Url="https://www.gebiz.gov.sg/">
+          <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" sap2010:Annotation.AnnotationText="This is code is to open GeBiz Page and filter to &quot;Administration &amp; Training ⇒ Courses&quot; on Opportunity page.&#xA;&#xA;Take note: GeBiz does not allow multiple window session open to access the same page.  To overcome need to close all browsers.&#xD;&#xA;" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="466.4,880" sap2010:WorkflowViewState.IdRef="OpenBrowser_2" NewSession="True" Url="https://www.gebiz.gov.sg/">
             <ui:OpenBrowser.Body>
               <ActivityAction x:TypeArguments="x:Object">
                 <ActivityAction.Argument>
