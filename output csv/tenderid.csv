@@ -1,57 +1,43 @@
-﻿ID,Quote Id,FQuote Id,Type
-1,AGC000ETQ22000006,AGC000ETQ22000006,Quotation
-2,MOESCHETQ22001571,MOESCHETQ22001571,Quotation
-3,MOESCHETQ22001570,MOESCHETQ22001570 / CPS-22/7419/04,Quotation
-4,MOESCHETQ22001566,MOESCHETQ22001566,Quotation
-5,MOESCHETQ22001563,MOESCHETQ22001563,Quotation
-6,MOESCHETQ22001561,MOESCHETQ22001561,Quotation
-7,MOESCHETQ22001562,MOESCHETQ22001562 / SPS/2022/009,Quotation
-8,MOESCHETQ22001560,MOESCHETQ22001560,Quotation
-9,MOESCHETQ22001559,MOESCHETQ22001559,Quotation
-10,MOESCHETQ22001557,MOESCHETQ22001557,Quotation
-11,AGC000ETQ22000005,AGC000ETQ22000005,Quotation
-12,MOESCHETQ22001551,MOESCHETQ22001551,Quotation
-13,MOESCHETQ22001548,MOESCHETQ22001548,Quotation
-14,MOESCHETQ22001556,MOESCHETQ22001556,Quotation
-15,FOR000ETQ22000016,FOR000ETQ22000016,Quotation
-16,MOESCHETQ22001553,MOESCHETQ22001553,Quotation
-17,MOESCHETQ22001552,MOESCHETQ22001552,Quotation
-18,MOESCHETQ22001544,MOESCHETQ22001544,Quotation
-19,MOESCHETQ22001541,MOESCHETQ22001541,Quotation
-20,MOESCHETQ22001543,MOESCHETQ22001543,Quotation
-21,MOESCHETQ22001539,MOESCHETQ22001539 / Pupil Well-being-28/3/2022,Quotation
-22,MOESCHETQ22001535,MOESCHETQ22001535,Quotation
-23,MOESCHETQ22001515,MOESCHETQ22001515,Quotation
-24,MOESCHETQ22001512,MOESCHETQ22001512,Quotation
-25,MOESCHETQ22001513,MOESCHETQ22001513,Quotation
-26,MOESCHETQ22001511,MOESCHETQ22001511 / 1161/PE/22/003,Quotation
-27,MOESCHETQ22001509,MOESCHETQ22001509,Quotation
-28,MOESCHETQ22001510,MOESCHETQ22001510,Quotation
-29,MOESCHETQ22001514,MOESCHETQ22001514,Quotation
-30,MOESCHETQ22001471,MOESCHETQ22001471,Quotation
-31,MOESCHETQ22001475,MOESCHETQ22001475,Quotation
-32,MOESCHETQ22001507,MOESCHETQ22001507,Quotation
-33,MOESCHETQ22001492,MOESCHETQ22001492,Quotation
-34,MOESCHETQ22001504,MOESCHETQ22001504,Quotation
-35,MOE000ETT22000023,MOE000ETT22000023 / MOE/22/SEB/001,Tender
-36,MOESCHETQ22001491,MOESCHETQ22001491,Quotation
-37,MOESCHETQ22001485,MOESCHETQ22001485,Quotation
-38,MOESCHETQ22001478,MOESCHETQ22001478,Quotation
-39,MOESCHETQ22001472,MOESCHETQ22001472,Quotation
-40,MOESCHETQ22001443,MOESCHETQ22001443,Quotation
-41,MOESCHETQ22001464,MOESCHETQ22001464,Quotation
-42,MOESCHETQ22001462,MOESCHETQ22001462,Quotation
-43,MOESCHETQ22001459,MOESCHETQ22001459,Quotation
-44,MOESCHETQ22001382,MOESCHETQ22001382,Quotation
-45,MOESCHETQ22001458,MOESCHETQ22001458,Quotation
-46,MOESCHETQ22001456,MOESCHETQ22001456,Quotation
-47,FOR000ETQ22000015,FOR000ETQ22000015,Quotation
-48,MOESCHETQ22001441,MOESCHETQ22001441,Quotation
-49,MOESCHETQ22001442,MOESCHETQ22001442,Quotation
-50,MOESCHETQ22001429,MOESCHETQ22001429,Quotation
-51,NLB000ETQ22000017,NLB000ETQ22000017,Quotation
-52,MOESCHETQ22001412,MOESCHETQ22001412,Quotation
-53,MOESCHETQ22001387,MOESCHETQ22001387,Quotation
-54,HTX000ETQ22000020,HTX000ETQ22000020,Quotation
-55,MOESCHETQ22001384,MOESCHETQ22001384,Quotation
-56,DST000ETT22000002,DST000ETT22000002,Tender
+﻿ID,Quote Id,Type,Name,Agency,Published Date,Closing Date,Briefing Date,Contact's Name,Contact's Email,Contact's Tel,Contact's Fax,Contact's Address
+1,MOESCHETQ22001561,Quotation,Supply of Instructor(s) for a 3 Day Sec 3 Adventure-Based Level Programmed (non-residential) for Yishun Secondary School,Ministry of Education - Schools,01 Apr 2022 05:50PM,11 Apr 2022 01:00PM,N/A,MR AIDIL BIN IDRIS,aidil_idris@schools.gov.sg,68767129,67557748,"Yishun Secondary School
+4 Yishun Street 71
+Singapore 768516"
+3,MOESCHETQ22001560,Quotation,Supply of instructors for P6 hands-on workshop on adaptation in Fairfield Methodist School (Primary),Ministry of Education - Schools,01 Apr 2022 05:19PM,11 Apr 2022 01:00PM,N/A,ROZDIYAH BTE HARUN,rozdiyah_harun@schools.gov.sg,67788431,,100 Dover Road Singapore 139648
+4,MOESCHETQ22001559,Quotation,Supply of Instructors for Leadership and Design Thinking in Sembawang Secondary School,Ministry of Education - Schools,01 Apr 2022 05:19PM,13 Apr 2022 01:00PM,N/A,MR RAJAKUMAR,rajakumar_raghavan@moe.edu.sg,67566760,67585380,"30 Sembawang Crescent
+Singapore 757704"
+5,MOESCHETQ22001557,Quotation,Dunman High School - Provision Of Strength Programme (Profiling And Workshop) For Year 3,Ministry of Education - Schools,01 Apr 2022 05:05PM,12 Apr 2022 01:00PM,N/A,MS ANGIE LIM ERN CHZE,lim.ernchze@dhs.sg,65936851,,"Dunman High School
+10 Tanjong Rhu Road, S(436895)"
+6,AGC000ETQ22000005,Quotation,ITQ for Provision of a Plain English Writing Course to AGC Officers,Attorney-General's Chambers,01 Apr 2022 03:04PM,12 Apr 2022 01:00PM,N/A,MS SHIRLYNN LOH,Shirlynn_Loh@agc.gov.sg,69089136,,1 Upper Pickering Street Singapore 058288
+7,MOESCHETQ22001551,Quotation,Dunman High School - Provision Of Leadership Programme For Year 1 (Y1) And Year 2 (Y2),Ministry of Education - Schools,01 Apr 2022 01:04PM,11 Apr 2022 01:00PM,N/A,MR LOW JIN HAO,low.jinhao@dhs.sg,63450533,,"Dunman High School
+10 Tanjong Rhu Road, S(436895)"
+8,MOESCHETQ22001548,Quotation,Supply of Instructor for 3-Day Sec 1 Outdoor Adventure and Leadership Programme at MOE Labrador OALC/KCPSS in Kuo Chuan Presbyterian Secondary School,Ministry of Education - Schools,01 Apr 2022 12:50PM,11 Apr 2022 01:00PM,N/A,JOSEPH CHUNG,chung_wei_peng_joseph@schools.gov.sg,62593811,,10 Bishan Street 13 Singapore 579795
+9,MOESCHETQ22001556,Quotation,Supply and Delivery of 3-Day Non-Residential Primary 5 Adventure Learning Cohort Camp Programme for Opera Estate Primary School 2022,Ministry of Education - Schools,01 Apr 2022 12:50PM,11 Apr 2022 01:00PM,N/A,JENNIFER NG,ng_siew_hoong@schools.gov.sg,62410417,64493042,"48 Fidelio Street
+Singapore 458436"
+10,FOR000ETQ22000016,Quotation,Engagement of a Training Agency to conduct an online course on Health Policy & the Role of Data & Technology in Healthcare,Ministry of Education - Schools,01 Apr 2022 12:50PM,11 Apr 2022 01:00PM,N/A,GOH KAIJIE,Sri_Weerdah_ABDULLAH@MFA.gov.sg,6379 8475,,"Tanglin, Singapore 248163"
+11,MOESCHETQ22001553,Quotation,First aid course for staff,Ministry of Education - Schools,01 Apr 2022 12:50PM,11 Apr 2022 01:00PM,N/A,ALISON TEO,teo_yili_alison@moe.edu.sg,65701588,65703680,9 Punggol Place Singapore 828845
+12,MOESCHETQ22001552,Quotation,CliftonStrengths Profiling and Professional Development Workshop 2022 at CHIJ St. Theresa's Convent,Ministry of Education - Schools,01 Apr 2022 12:50PM,11 Apr 2022 01:00PM,N/A,MR BRYAN LIM,lim_choon_huat@moe.edu.sg,64775777,64775700,160 Lower Delta Road Singapore 099138
+13,MOESCHETQ22001544,Quotation,Supply of Instructors for Leadership Developmental Programme for P5 Cohort students in Bukit View Primary School,Ministry of Education - Schools,01 Apr 2022 12:50PM,11 Apr 2022 01:00PM,N/A,MDM TAN MING SAY,tan_ming_say@moe.edu.sg,65661980,65635015,"Bukit View Primary School
+18 Bukit Batok Street 21
+Singapore 659634"
+14,MOESCHETQ22001541,Quotation,Supply of 3-Day Student Leadership Training Programme for Victoria Junior College.,Ministry of Education - Schools,01 Apr 2022 12:50PM,14 Apr 2022 01:00PM,N/A,KOH SEOW CHIN,KOH_Seow_Chin@schools.gov.sg,64485011,,"20 Marine Vista, Singapore 449035"
+15,MOESCHETQ22001543,Quotation,Supply of Instructor for P5 & P6 Carpe Diem Motivation Workshop in South View Primary School,Ministry of Education - Schools,01 Apr 2022 12:50PM,11 Apr 2022 01:00PM,N/A,NUR FARHANAH SUHAIRI,nur_farhanah_suhairi@schools.gov.sg,67697176,,"South View Pri School, 6 Choa Chu Kang Central, Singapore 689762"
+17,MOESCHETQ22001535,Quotation,Coloured Brain Communication Workshop for W2 SLs,Ministry of Education - Schools,01 Apr 2022 12:50PM,08 Apr 2022 01:00PM,N/A,YEO CAIXIA,yeo_caixia@schools.gov.sg,67676750,67676751,21 Choa Chu Kang Crescent 688268
+18,MOESCHETQ22001515,Quotation,Sec 1 Outdoor Adventure Learning Camp 2022 (3 Days),Ministry of Education - Schools,01 Apr 2022 12:50PM,08 Apr 2022 01:00PM,N/A,MR WONG KHAI YU,wong_khai_yu@moe.edu.sg,62816606,63820558,"296 Lorong Ah Soo
+Singapore 536742"
+19,MOESCHETQ22001512,Quotation,Sec 3 Outdoor Adventure Camp in Hua Yi Secondary School,Ministry of Education - Schools,01 Apr 2022 12:50PM,08 Apr 2022 01:00PM,N/A,LEE TAOJING,lee_taojing@schools.gov.sg,65634568,65634505,Hua Yi Secondary School 60 Jurong West St 42 Singapore 649371
+20,MOESCHETQ22001513,Quotation,Supply of Instructors for Sec 1 Public Speaking Programme in Zhenghua Sec Sch,Ministry of Education - Schools,01 Apr 2022 12:50PM,08 Apr 2022 01:00PM,N/A,TAN DANWEI CLAUDIA,tan_danwei_claudia@schools.gov.sg,67639455,67633577,91 Senja Road
+22,MOESCHETQ22001509,Quotation,Supply of Instructor for the Enrichment Programmes with Career Guidance in St. Gabriel's Secondary School.,Ministry of Education - Schools,01 Apr 2022 12:50PM,08 Apr 2022 01:00PM,N/A,SURIANI BINTE SULAIMAN,suriani_sulaiman@schools.gov.sg,62889470,62898615,"St. Gabriel's Secondary School
+24 Serangoon Ave 1
+Singapore 556140"
+23,MOESCHETQ22001510,Quotation,Supply of Instructors for P4 Copper Tooling 2022 Programme in Pioneer Primary School,Ministry of Education - Schools,01 Apr 2022 12:50PM,07 Apr 2022 01:00PM,N/A,NOR ASHIKIN BUANG,Nor_ashikin_buang@schools.gov.sg,67932039,,"Pioneer Primary School, 31 Jurong West Street 91, S649037"
+2,MOESCHETQ22001562 / SPS/2022/009,Quotation,,,,,,,,,,
+16,MOESCHETQ22001539 / Pupil Well-being-28/3/2022,Quotation,,,,,,,,,,
+21,MOESCHETQ22001511 / 1161/PE/22/003,Quotation,,,,,,,,,,
+,,,Provision of coaching programme for Lead Teachers of E7 Cluster Schools,Ministry of Education - Schools,01 Apr 2022 05:34PM,11 Apr 2022 01:00PM,N/A,MS GRACE LEE YUN YUN,lee_yun_yun_grace@moe.edu.sg,63440929,63445152,"St Patrick's School
+490 East Coast Road
+Singapore 429058"
+,,,Sec 1 OAL Camp,Ministry of Education - Schools,01 Apr 2022 12:50PM,08 Apr 2022 01:00PM,N/A,MS TAMMIE HO,tammie_ho@schools.gov.sg,63441393,,"50 Goodman Road
+Singapore 439012"
+,,,Supply of Instructors for 1-day Primary 3 Friendship Camp 2022,Ministry of Education - Schools,01 Apr 2022 12:50PM,12 Apr 2022 01:00PM,N/A,MS LYDIA TEE AI LEEN,lydia_teen_ai_leen@schools.gov.sg,62698832,63575516,"Si Ling Primary School,
+61, Woodlands Ave.1,
+Singapore 739067"
