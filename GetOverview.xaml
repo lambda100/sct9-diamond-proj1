@@ -1812,7 +1812,7 @@
       </sap:WorkflowViewStateService.ViewState>
     </ui:CommentOut>
     <ui:Comment sap:VirtualizedContainerService.HintSize="974.4,268" sap2010:WorkflowViewState.IdRef="Comment_5" Text="TODO:&#xD;&#xA;&#xD;&#xA;- Wait for Ryan to split the column for me to get&#xD;&#xA;- Wait for Ryan to change the save-to folder&#xD;&#xA;- Invoke download&#xD;&#xA;&#xD;&#xA;Bug:&#xA;&#xA;- Not stable - can suddenly can't find the link on the 24th/25th/8th run" />
-    <ui:ReadCsvFile Encoding="{x:Null}" DataTable="[Tenders_dt]" Delimitator="Comma" DisplayName="Read Tenders CSV" FilePath="output\OpenBids.csv" sap:VirtualizedContainerService.HintSize="974.4,155.2" sap2010:WorkflowViewState.IdRef="ReadCsvFile_1">
+    <ui:ReadCsvFile Encoding="{x:Null}" DataTable="[Tenders_dt]" Delimitator="Comma" DisplayName="Read Tenders CSV" FilePath="output\OPEN\OpenBids.csv" sap:VirtualizedContainerService.HintSize="974.4,155.2" sap2010:WorkflowViewState.IdRef="ReadCsvFile_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
