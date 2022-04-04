@@ -423,7 +423,7 @@
                 </ui:CursorPosition>
               </ui:Click.CursorPosition>
               <ui:Click.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f970601a-7400-4b7f-83fa-f0e9b5686be8" InformativeScreenshot="a74b92eb3f306c41d49f2dfbbd6f4b29" Selector="&lt;webctrl id='contentForm:j_idt1185_searchBar_BUTTON-GO' tag='INPUT' type='submit' /&gt;">
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f970601a-7400-4b7f-83fa-f0e9b5686be8" InformativeScreenshot="6a79ffc4eb3b9149e4c753790051b500" Selector="&lt;webctrl id='contentForm:j_idt1236_searchBar_BUTTON-GO' tag='INPUT' type='submit' /&gt;">
                   <ui:Target.TimeoutMS>
                     <InArgument x:TypeArguments="x:Int32" />
                   </ui:Target.TimeoutMS>
