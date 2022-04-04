@@ -1,4 +1,4 @@
-﻿<Activity mc:Ignorable="sap sap2010" x:Class="ReadFromPage" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1068.8,8121.6" sap2010:WorkflowViewState.IdRef="ReadFromPage_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:sr="clr-namespace:System.Reflection;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="ReadFromPage" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1068.8,8224" sap2010:WorkflowViewState.IdRef="ReadFromPage_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:sr="clr-namespace:System.Reflection;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="36">
       <x:String>System.Activities</x:String>
@@ -75,7 +75,7 @@
       <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="GetOverview v2" sap:VirtualizedContainerService.HintSize="1076.8,8056.8" sap2010:WorkflowViewState.IdRef="Sequence_112">
+  <Sequence DisplayName="GetOverview v2" sap:VirtualizedContainerService.HintSize="1016,8159.2" sap2010:WorkflowViewState.IdRef="Sequence_112">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="Tenders_dt" />
       <Variable x:TypeArguments="x:String" Name="TenderId" />
@@ -105,7 +105,7 @@
         <x:Boolean x:Key="IsPinned">False</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:CommentOut DisplayName="OLD VERSION" sap:VirtualizedContainerService.HintSize="1035.2,52.8" sap2010:WorkflowViewState.IdRef="CommentOut_13">
+    <ui:CommentOut DisplayName="OLD VERSION" sap:VirtualizedContainerService.HintSize="974.4,52.8" sap2010:WorkflowViewState.IdRef="CommentOut_13">
       <ui:CommentOut.Body>
         <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="1345.6,6802.4" sap2010:WorkflowViewState.IdRef="Sequence_110">
           <sap:WorkflowViewStateService.ViewState>
@@ -1811,16 +1811,16 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:CommentOut>
-    <ui:Comment sap:VirtualizedContainerService.HintSize="1035.2,268" sap2010:WorkflowViewState.IdRef="Comment_5" Text="TODO:&#xD;&#xA;&#xD;&#xA;- Wait for Ryan to split the column for me to get&#xD;&#xA;- Wait for Ryan to change the save-to folder&#xD;&#xA;- Invoke download&#xD;&#xA;&#xD;&#xA;Bug:&#xA;&#xA;- Not stable - can suddenly can't find the link on the 24th/25th/8th run" />
-    <ui:ReadCsvFile Encoding="{x:Null}" DataTable="[Tenders_dt]" Delimitator="Comma" DisplayName="Read Tenders CSV" FilePath="output csv\tenderid.csv" sap:VirtualizedContainerService.HintSize="1035.2,52.8" sap2010:WorkflowViewState.IdRef="ReadCsvFile_1">
+    <ui:Comment sap:VirtualizedContainerService.HintSize="974.4,268" sap2010:WorkflowViewState.IdRef="Comment_5" Text="TODO:&#xD;&#xA;&#xD;&#xA;- Wait for Ryan to split the column for me to get&#xD;&#xA;- Wait for Ryan to change the save-to folder&#xD;&#xA;- Invoke download&#xD;&#xA;&#xD;&#xA;Bug:&#xA;&#xA;- Not stable - can suddenly can't find the link on the 24th/25th/8th run" />
+    <ui:ReadCsvFile Encoding="{x:Null}" DataTable="[Tenders_dt]" Delimitator="Comma" DisplayName="Read Tenders CSV" FilePath="output\OpenBids.csv" sap:VirtualizedContainerService.HintSize="974.4,155.2" sap2010:WorkflowViewState.IdRef="ReadCsvFile_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsPinned">True</x:Boolean>
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:ReadCsvFile>
-    <ui:BuildDataTable DataTable="[Pages_dt]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="1035.2,52.8" sap2010:WorkflowViewState.IdRef="BuildDataTable_10" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Idx&quot; msdata:Caption=&quot;&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Name&quot; msdata:Caption=&quot;&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;200&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Agency&quot; msdata:Caption=&quot;&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Published_x0020_Date&quot; msdata:Caption=&quot;&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Closing_x0020_Date&quot; msdata:Caption=&quot;&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Briefing_x0020_Date&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Contact_x0027_s_x0020_Name&quot; msdata:Caption=&quot;&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Contact_x0027_s_x0020_Email&quot; msdata:Caption=&quot;&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Contact_x0027_s_x0020_Tel&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Contact_x0027_s_x0020_Fax&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Contact_x0027_s_x0020_Address&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;200&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;">
+    <ui:BuildDataTable DataTable="[Pages_dt]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="974.4,52.8" sap2010:WorkflowViewState.IdRef="BuildDataTable_10" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Idx&quot; msdata:Caption=&quot;&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Name&quot; msdata:Caption=&quot;&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;200&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Agency&quot; msdata:Caption=&quot;&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Published_x0020_Date&quot; msdata:Caption=&quot;&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Closing_x0020_Date&quot; msdata:Caption=&quot;&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Briefing_x0020_Date&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Contact_x0027_s_x0020_Name&quot; msdata:Caption=&quot;&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Contact_x0027_s_x0020_Email&quot; msdata:Caption=&quot;&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Contact_x0027_s_x0020_Tel&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Contact_x0027_s_x0020_Fax&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Contact_x0027_s_x0020_Address&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;200&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsPinned">True</x:Boolean>
@@ -1828,28 +1828,28 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:BuildDataTable>
-    <ui:ForEachRow CurrentIndex="{x:Null}" DataTable="[Tenders_dt]" DisplayName="For Each Row in Tenders DT" sap:VirtualizedContainerService.HintSize="1035.2,6872" sap2010:WorkflowViewState.IdRef="ForEachRow_13">
+    <ui:ForEachRow CurrentIndex="{x:Null}" DataTable="[Tenders_dt]" DisplayName="For Each Row in Tenders DT" sap:VirtualizedContainerService.HintSize="974.4,6872" sap2010:WorkflowViewState.IdRef="ForEachRow_13">
       <ui:ForEachRow.Body>
         <ActivityAction x:TypeArguments="sd:DataRow">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="985.6,6723.2" sap2010:WorkflowViewState.IdRef="Sequence_111">
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="924.8,6723.2" sap2010:WorkflowViewState.IdRef="Sequence_111">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Assign sap:VirtualizedContainerService.HintSize="944,60" sap2010:WorkflowViewState.IdRef="Assign_130">
+            <Assign sap:VirtualizedContainerService.HintSize="883.2,60" sap2010:WorkflowViewState.IdRef="Assign_130">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:String">[TenderId]</OutArgument>
               </Assign.To>
               <Assign.Value>
-                <InArgument x:TypeArguments="x:String">[row(1).ToString]</InArgument>
+                <InArgument x:TypeArguments="x:String">[row(2).ToString]</InArgument>
               </Assign.Value>
             </Assign>
-            <Assign sap:VirtualizedContainerService.HintSize="944,60" sap2010:WorkflowViewState.IdRef="Assign_140">
+            <Assign sap:VirtualizedContainerService.HintSize="883.2,60" sap2010:WorkflowViewState.IdRef="Assign_140">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:String">[TenderId]</OutArgument>
               </Assign.To>
@@ -1857,21 +1857,21 @@
                 <InArgument x:TypeArguments="x:String">[TenderId.Split(" "c)(0)]</InArgument>
               </Assign.Value>
             </Assign>
-            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="944,62.4" sap2010:WorkflowViewState.IdRef="WriteLine_81" Text="[&quot;Tender ID = &quot; + TenderId]" />
-            <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'chrome.exe GeBIZ'" sap:VirtualizedContainerService.HintSize="944,6265.6" sap2010:WorkflowViewState.IdRef="BrowserScope_17" InformativeScreenshot="0f563778cfb5245d745760d5a1268673" Selector="&lt;html app='chrome.exe' htmlwindowname='multipleWindowBlocker_WindowTab-1' title='GeBIZ | *' /&gt;">
+            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="883.2,62.4" sap2010:WorkflowViewState.IdRef="WriteLine_81" Text="[&quot;Tender ID = &quot; + TenderId]" />
+            <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'chrome.exe GeBIZ'" sap:VirtualizedContainerService.HintSize="883.2,6265.6" sap2010:WorkflowViewState.IdRef="BrowserScope_17" InformativeScreenshot="0f563778cfb5245d745760d5a1268673" Selector="&lt;html app='chrome.exe' htmlwindowname='multipleWindowBlocker_WindowTab-1' title='GeBIZ | *' /&gt;">
               <ui:BrowserScope.Body>
                 <ActivityAction x:TypeArguments="x:Object">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="910.4,6118.4" sap2010:WorkflowViewState.IdRef="Sequence_113">
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="849.6,6118.4" sap2010:WorkflowViewState.IdRef="Sequence_113">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" sap2010:Annotation.AnnotationText="To reset search parameters" ClickType="CLICK_SINGLE" DisplayName="Click Opportunities link" sap:VirtualizedContainerService.HintSize="868.8,138.4" sap2010:WorkflowViewState.IdRef="Click_4" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" sap2010:Annotation.AnnotationText="To reset search parameters" ClickType="CLICK_SINGLE" DisplayName="Click Opportunities link" sap:VirtualizedContainerService.HintSize="808,138.4" sap2010:WorkflowViewState.IdRef="Click_4" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
                       <ui:Click.CursorPosition>
                         <ui:CursorPosition Position="Center">
                           <ui:CursorPosition.OffsetX>
@@ -1899,7 +1899,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:Click>
-                    <ui:CommentOut DisplayName="Comment Out - TEST 1" sap:VirtualizedContainerService.HintSize="868.8,52.8" sap2010:WorkflowViewState.IdRef="CommentOut_16">
+                    <ui:CommentOut DisplayName="Comment Out - TEST 1" sap:VirtualizedContainerService.HintSize="808,52.8" sap2010:WorkflowViewState.IdRef="CommentOut_16">
                       <ui:CommentOut.Body>
                         <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416.8,771.2" sap2010:WorkflowViewState.IdRef="Sequence_141">
                           <sap:WorkflowViewStateService.ViewState>
@@ -1988,7 +1988,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:CommentOut>
-                    <Sequence DisplayName="Seq - TEST 2" sap:VirtualizedContainerService.HintSize="868.8,729.6" sap2010:WorkflowViewState.IdRef="Sequence_142">
+                    <Sequence DisplayName="Seq - TEST 2" sap:VirtualizedContainerService.HintSize="808,729.6" sap2010:WorkflowViewState.IdRef="Sequence_142">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -2199,7 +2199,7 @@
                         <x:Reference>__ReferenceID4</x:Reference>
                       </Flowchart>
                     </Sequence>
-                    <Sequence DisplayName="Seq - Overview page" sap:VirtualizedContainerService.HintSize="868.8,4831.2" sap2010:WorkflowViewState.IdRef="Sequence_114">
+                    <Sequence DisplayName="Seq - Overview page" sap:VirtualizedContainerService.HintSize="808,4831.2" sap2010:WorkflowViewState.IdRef="Sequence_114">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -2825,7 +2825,7 @@
                         </Sequence>
                       </Sequence>
                     </Sequence>
-                    <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke DownloadFile.xaml" sap:VirtualizedContainerService.HintSize="868.8,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="DownloadFile.xaml">
+                    <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke DownloadFile.xaml" sap:VirtualizedContainerService.HintSize="808,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="DownloadFile.xaml">
                       <ui:InvokeWorkflowFile.Arguments>
                         <scg:Dictionary x:TypeArguments="x:String, Argument" />
                       </ui:InvokeWorkflowFile.Arguments>
@@ -2839,7 +2839,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:BrowserScope>
-            <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{TenderId, PageName, Agency, DatePublished, DateClosing, DateBriefing, Contact1Name, ContactDetails_list(0), ContactDetails_list(1), ContactDetails_list(2), ContactDetails_list(3)}]" DataTable="[Pages_dt]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="944,22.4" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
+            <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{TenderId, PageName, Agency, DatePublished, DateClosing, DateBriefing, Contact1Name, ContactDetails_list(0), ContactDetails_list(1), ContactDetails_list(2), ContactDetails_list(3)}]" DataTable="[Pages_dt]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="883.2,22.4" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
           </Sequence>
         </ActivityAction>
       </ui:ForEachRow.Body>
@@ -2850,7 +2850,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:ForEachRow>
-    <ui:JoinDataTables DataTable1="[Tenders_dt]" DataTable2="[Pages_dt]" DisplayName="Join Data Tables" sap:VirtualizedContainerService.HintSize="1035.2,52.8" sap2010:WorkflowViewState.IdRef="JoinDataTables_1" JoinType="Full" OutputDataTable="[Pages_dt]">
+    <ui:JoinDataTables DataTable1="[Tenders_dt]" DataTable2="[Pages_dt]" DisplayName="Join Data Tables" sap:VirtualizedContainerService.HintSize="974.4,52.8" sap2010:WorkflowViewState.IdRef="JoinDataTables_1" JoinType="Full" OutputDataTable="[Pages_dt]">
       <ui:JoinDataTables.Arguments>
         <scg:List x:TypeArguments="ui:JoinOperationArgument" Capacity="4">
           <ui:JoinOperationArgument Operand="{x:Null}" BooleanOperator="And" Operator="EQ">
@@ -2870,9 +2870,9 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:JoinDataTables>
-    <ui:RemoveDataColumn Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="Idx" DataTable="[Pages_dt]" DisplayName="Remove Data Column" sap:VirtualizedContainerService.HintSize="1035.2,22.4" sap2010:WorkflowViewState.IdRef="RemoveDataColumn_1" />
-    <ui:OutputDataTable DataTable="[Pages_dt]" DisplayName="Output Data Table" sap:VirtualizedContainerService.HintSize="1035.2,22.4" sap2010:WorkflowViewState.IdRef="OutputDataTable_10" Text="[dtOutput]" />
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1035.2,52.8" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="Info" Message="[dtOutput]">
+    <ui:RemoveDataColumn Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="Idx" DataTable="[Pages_dt]" DisplayName="Remove Data Column" sap:VirtualizedContainerService.HintSize="974.4,22.4" sap2010:WorkflowViewState.IdRef="RemoveDataColumn_1" />
+    <ui:OutputDataTable DataTable="[Pages_dt]" DisplayName="Output Data Table" sap:VirtualizedContainerService.HintSize="974.4,22.4" sap2010:WorkflowViewState.IdRef="OutputDataTable_10" Text="[dtOutput]" />
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="974.4,52.8" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="Info" Message="[dtOutput]">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -2880,7 +2880,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:LogMessage>
-    <ui:WriteCsvFile Encoding="{x:Null}" AddHeaders="True" DataTable="[Pages_dt]" Delimitator="Comma" DisplayName="Write CSV" FilePath="output\OPEN\tenderid.csv" sap:VirtualizedContainerService.HintSize="1035.2,155.2" sap2010:WorkflowViewState.IdRef="WriteCsvFile_3">
+    <ui:WriteCsvFile Encoding="{x:Null}" AddHeaders="True" DataTable="[Pages_dt]" Delimitator="Comma" DisplayName="Write CSV" FilePath="output\OPEN\OpenBids.csv" sap:VirtualizedContainerService.HintSize="974.4,155.2" sap2010:WorkflowViewState.IdRef="WriteCsvFile_3">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
