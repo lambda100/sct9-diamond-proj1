@@ -178,7 +178,7 @@
             <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="Delay_6" />
             <ui:WaitUiElementAppear FoundElement="{x:Null}" WaitActive="{x:Null}" WaitVisible="{x:Null}" DisplayName="Find Element 'Passord login'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_2">
               <ui:WaitUiElementAppear.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="60370de8-8dce-4590-8f1c-3a909f2c688a" InformativeScreenshot="251e8b0adea6bea423ef6068bc5a2bd8" Selector="&lt;webctrl parentid='SpQrToggle-1FATab' tag='SPAN' /&gt;">
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="60370de8-8dce-4590-8f1c-3a909f2c688a" InformativeScreenshot="fdeede0f62acaa056e13ffde312416cc" Selector="&lt;webctrl parentid='SpQrToggle-1FATab' tag='SPAN' /&gt;">
                   <ui:Target.TimeoutMS>
                     <InArgument x:TypeArguments="x:Int32" />
                   </ui:Target.TimeoutMS>
@@ -200,7 +200,7 @@
                 </ui:CursorPosition>
               </ui:Click.CursorPosition>
               <ui:Click.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="72ca459e-410c-4cb4-9885-8ca731588faf" InformativeScreenshot="251e8b0adea6bea423ef6068bc5a2bd8" Selector="&lt;webctrl parentid='SpQrToggle-1FATab' tag='SPAN' /&gt;">
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="72ca459e-410c-4cb4-9885-8ca731588faf" InformativeScreenshot="fdeede0f62acaa056e13ffde312416cc" Selector="&lt;webctrl parentid='SpQrToggle-1FATab' tag='SPAN' /&gt;">
                   <ui:Target.TimeoutMS>
                     <InArgument x:TypeArguments="x:Int32" />
                   </ui:Target.TimeoutMS>
