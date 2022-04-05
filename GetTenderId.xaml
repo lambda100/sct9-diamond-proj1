@@ -471,7 +471,7 @@
       </sap:WorkflowViewStateService.ViewState>
       <ui:OutputDataTable DataTable="[dt_tenderid]" DisplayName="Output Data Table" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="OutputDataTable_5" Text="[strtenderid]" />
       <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="334,62.6666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_10" Text="[strtenderid]" />
-      <ui:WriteCsvFile Encoding="{x:Null}" AddHeaders="True" DataTable="[dt_tenderid]" Delimitator="Comma" DisplayName="Write CSV" FilePath="output\OpenBids.csv" sap:VirtualizedContainerService.HintSize="334,156.666666666667" sap2010:WorkflowViewState.IdRef="WriteCsvFile_2" />
+      <ui:WriteCsvFile Encoding="{x:Null}" AddHeaders="True" DataTable="[dt_tenderid]" Delimitator="Comma" DisplayName="Write CSV" FilePath="output\open\OpenBids.csv" sap:VirtualizedContainerService.HintSize="334,156.666666666667" sap2010:WorkflowViewState.IdRef="WriteCsvFile_2" />
     </Sequence>
   </Sequence>
 </Activity>
