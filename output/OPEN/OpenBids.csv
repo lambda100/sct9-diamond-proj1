@@ -1,3 +1,5 @@
-ID,Quote Id,FQuote Id,Type
-1,AGC000ETQ22000006,AGC000ETQ22000006,Quotation
-2,MOESCHETQ22001571,MOESCHETQ22001571,Quotation
+﻿ID,Quote Id,FQuote Id,Type,Name,Agency,Published Date,Closing Date,Briefing Date,Contact's Name,Contact's Email,Contact's Tel,Contact's Fax,Contact's Address
+1,AGC000ETQ22000006,AGC000ETQ22000006,Quotation,Provision of a Negotiations Workshop to Legal Service Officers,Attorney-General's Chambers,04 Apr 2022 12:19PM,13 Apr 2022 01:00PM,N/A,MS SHIRLYNN LOH,Shirlynn_Loh@agc.gov.sg,6908 9000,,1 Upper Pickering Street Singapore 058288
+2,MOESCHETQ22001571,MOESCHETQ22001571,Quotation,ITQ for Supply of Instructor for Elective Module for NA and NT Students in Punggol Secondary School,Ministry of Education - Schools,04 Apr 2022 11:34AM,12 Apr 2022 01:00PM,N/A,NG FULIA,ng_fulia@schools.gov.sg,64897851,64897859,"Punggol Secondary School
+51 Edgefield Plains
+Singapore 828870"
