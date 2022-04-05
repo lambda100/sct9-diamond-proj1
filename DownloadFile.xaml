@@ -1,4 +1,4 @@
-﻿<Activity mc:Ignorable="sap sap2010" x:Class="Gek___Save_File" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="634,1489.33333333333" sap2010:WorkflowViewState.IdRef="Gek___Save_File_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:si="clr-namespace:System.IO;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Gek___Save_File" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="634,1635.33333333333" sap2010:WorkflowViewState.IdRef="Gek___Save_File_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:si="clr-namespace:System.IO;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="28">
       <x:String>System.Activities</x:String>
@@ -61,7 +61,7 @@
       <AssemblyReference>System.ServiceModel</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="DownloadFile" sap:VirtualizedContainerService.HintSize="622.666666666667,1424.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="DownloadFile" sap:VirtualizedContainerService.HintSize="622.666666666667,1570.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="si:FileInfo" Name="strDownload" />
       <Variable x:TypeArguments="x:String" Default="C:\Temp" Name="strPath" />
@@ -71,24 +71,36 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Web" sap:VirtualizedContainerService.HintSize="580.666666666667,1332.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_3">
+    <Sequence DisplayName="Web" sap:VirtualizedContainerService.HintSize="580.666666666667,1478.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_3">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach Window 'GeBIZOppo Chrome_wi'" sap:VirtualizedContainerService.HintSize="538.666666666667,1240.66666666667" sap2010:WorkflowViewState.IdRef="WindowScope_1" InformativeScreenshot="1e70ce56d4d2ab539cfdba4257cf29bc" Selector="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='GeBIZ | Opportunity Details - Google Chrome' /&gt;">
+      <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach Window 'GeBIZOppo Chrome_wi'" sap:VirtualizedContainerService.HintSize="538.666666666667,1386.66666666667" sap2010:WorkflowViewState.IdRef="WindowScope_1" InformativeScreenshot="1e70ce56d4d2ab539cfdba4257cf29bc" Selector="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='GeBIZ | Opportunity Details - Google Chrome' /&gt;">
         <ui:WindowScope.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="504.666666666667,1094.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="504.666666666667,1240.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_2">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
+              <ui:WaitUiElementAppear FoundElement="{x:Null}" WaitActive="{x:Null}" WaitVisible="{x:Null}" DisplayName="Find Element 'INPUT'" sap:VirtualizedContainerService.HintSize="462.666666666667,106" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_1">
+                <ui:WaitUiElementAppear.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="9e8d3eaf-9c68-4374-ae1f-1eb15d6f1f91" InformativeScreenshot="1baa1b7237e5c7e6cb83381206fe9f66" Selector="&lt;html app='chrome.exe' htmlwindowname='multipleWindowBlocker_WindowTab-1' title='GeBIZ | Opportunity Details' /&gt;&lt;webctrl tag='INPUT' type='submit' aaname='Download All' aastate='disabled' /&gt;">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                    <ui:Target.WaitForReady>
+                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                    </ui:Target.WaitForReady>
+                  </ui:Target>
+                </ui:WaitUiElementAppear.Target>
+              </ui:WaitUiElementAppear>
               <ui:GetLastDownloadedFile Timeout="{x:Null}" DisplayName="Wait for Download" DownloadFolder="C:\Temp" File="[strDownload]" sap:VirtualizedContainerService.HintSize="462.666666666667,409.333333333333" sap2010:WorkflowViewState.IdRef="GetLastDownloadedFile_1">
                 <ui:GetLastDownloadedFile.Body>
                   <ActivityAction>
@@ -110,7 +122,7 @@
                           </ui:CursorPosition>
                         </ui:Click.CursorPosition>
                         <ui:Click.Target>
-                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="9ca908a7-a71a-49ba-9997-e9733bd03e5d" InformativeScreenshot="bf93e18cb970c9c87643578ace3e392a" Selector="&lt;html app='chrome.exe' htmlwindowname='multipleWindowBlocker_WindowTab-1' title='GeBIZ | Opportunity Details' /&gt;&lt;webctrl name='contentForm:j_idt405:j_idt431' tag='INPUT' type='submit' /&gt;">
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="9ca908a7-a71a-49ba-9997-e9733bd03e5d" InformativeScreenshot="bf93e18cb970c9c87643578ace3e392a" Selector="&lt;html app='chrome.exe' htmlwindowname='multipleWindowBlocker_WindowTab-1' title='GeBIZ | Opportunity Details' /&gt;&lt;webctrl tag='INPUT' type='submit' aaname='Download All' /&gt;">
                             <ui:Target.TimeoutMS>
                               <InArgument x:TypeArguments="x:Int32" />
                             </ui:Target.TimeoutMS>
