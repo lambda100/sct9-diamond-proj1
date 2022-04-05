@@ -6,7 +6,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1106.4,624</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1068.8,624</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>GetIndividualStatus_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="22">
@@ -65,14 +65,7 @@
     </sap:WorkflowViewStateService.ViewState>
     <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get ID" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="GetValue_2">
       <ui:GetValue.Target>
-        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="27f5e1d5-897f-48cd-8561-969285f43e8f" InformativeScreenshot="e72c5623f189025859c12f8ae0a93f07" Selector="&lt;html app='chrome.exe' htmlwindowname='multipleWindowBlocker_WindowTab-1' title='GeBIZ | Opportunity Details' /&gt;&lt;webctrl tag='A' type='link' class='breadcrumb_LINK' css-selector='body&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span&amp;gt;a' parentclass='breadcrumb_MAIN' idx='3' /&gt;">
-          <ui:Target.TimeoutMS>
-            <InArgument x:TypeArguments="x:Int32" />
-          </ui:Target.TimeoutMS>
-          <ui:Target.WaitForReady>
-            <InArgument x:TypeArguments="ui:WaitForReady" />
-          </ui:Target.WaitForReady>
-        </ui:Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="27f5e1d5-897f-48cd-8561-969285f43e8f" InformativeScreenshot="e72c5623f189025859c12f8ae0a93f07" Selector="&lt;html app='chrome.exe' htmlwindowname='multipleWindowBlocker_WindowTab-1' title='GeBIZ | Opportunity Details' /&gt;&lt;webctrl tag='A' type='link' class='breadcrumb_LINK' css-selector='body&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span&amp;gt;a' parentclass='breadcrumb_MAIN' idx='3' /&gt;" TimeoutMS="1000" WaitForReady="INTERACTIVE" />
       </ui:GetValue.Target>
       <ui:GetValue.Value>
         <OutArgument x:TypeArguments="x:String">[out_OpportunityId]</OutArgument>
@@ -80,14 +73,7 @@
     </ui:GetValue>
     <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get status" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="GetValue_1">
       <ui:GetValue.Target>
-        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="2676930b-a41b-46bb-8d9e-ab7813e4d673" InformativeScreenshot="1984646db99f17ba4ed8c2767980df3e" Selector="&lt;html app='chrome.exe' htmlwindowname='multipleWindowBlocker_WindowTab-1' title='GeBIZ | Opportunity Details' /&gt;&lt;webctrl tag='DIV' class='label_MAIN label_WHITE-ON-GRAY' /&gt;">
-          <ui:Target.TimeoutMS>
-            <InArgument x:TypeArguments="x:Int32" />
-          </ui:Target.TimeoutMS>
-          <ui:Target.WaitForReady>
-            <InArgument x:TypeArguments="ui:WaitForReady" />
-          </ui:Target.WaitForReady>
-        </ui:Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="2676930b-a41b-46bb-8d9e-ab7813e4d673" InformativeScreenshot="1984646db99f17ba4ed8c2767980df3e" Selector="&lt;html app='chrome.exe' htmlwindowname='multipleWindowBlocker_WindowTab-1' title='GeBIZ | Opportunity Details' /&gt;&lt;webctrl tag='DIV' class='label_MAIN label_WHITE-ON-GRAY' /&gt;" TimeoutMS="1000" WaitForReady="INTERACTIVE" />
       </ui:GetValue.Target>
       <ui:GetValue.Value>
         <OutArgument x:TypeArguments="x:String">[out_OpportunityStatus]</OutArgument>
