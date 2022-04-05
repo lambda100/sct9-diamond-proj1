@@ -79,7 +79,7 @@
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'chrome.exe GeBIZ'" sap:VirtualizedContainerService.HintSize="538.666666666667,1774" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="a284d358a8b7670dfe3ba8711be3dde5" Selector="&lt;html app='chrome.exe' htmlwindowname='multipleWindowBlocker_WindowTab-1' title='GeBIZ | Opportunity Details' /&gt;">
+      <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'chrome.exe GeBIZ'" sap:VirtualizedContainerService.HintSize="538.666666666667,1774" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="5b2fec8f4d2e98338b718b3b61dff4d8" Selector="&lt;html app='chrome.exe' htmlwindowname='multipleWindowBlocker_WindowTab-1' title='GeBIZ | Opportunity Details' /&gt;">
         <ui:BrowserScope.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
@@ -93,7 +93,7 @@
               </sap:WorkflowViewStateService.ViewState>
               <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Quotation or Tender ID" sap:VirtualizedContainerService.HintSize="462.666666666667,106" sap2010:WorkflowViewState.IdRef="GetValue_1">
                 <ui:GetValue.Target>
-                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="cfdbd0d7-ed41-4530-a453-5b40b91c2328" InformativeScreenshot="94ca29831a17bca2ef8c6ed173305ac9" Selector="&lt;webctrl parentid='contentForm:j_id162' tag='A' type='link' /&gt;">
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="cfdbd0d7-ed41-4530-a453-5b40b91c2328" InformativeScreenshot="94ca29831a17bca2ef8c6ed173305ac9" Selector="&lt;webctrl tag='A' type='link' class='breadcrumb_LINK' css-selector='body&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span&amp;gt;a' idx='3' /&gt;">
                     <ui:Target.TimeoutMS>
                       <InArgument x:TypeArguments="x:Int32" />
                     </ui:Target.TimeoutMS>
