@@ -130,9 +130,9 @@
                 </ui:CursorPosition>
               </ui:Click.CursorPosition>
               <ui:Click.Target>
-                <ui:Target Element="{x:Null}" Id="6c92c263-aa36-46b0-a9c2-248b8811680c" InformativeScreenshot="51a4afa20b0f296707a4ccfc1e6efa8c" Selector="&lt;webctrl aaname='For Individuals' tag='INPUT' /&gt;">
+                <ui:Target Element="{x:Null}" Id="6c92c263-aa36-46b0-a9c2-248b8811680c" InformativeScreenshot="cd2ab55759b0db98d2662e21b07732d1" Selector="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='GeBIZ | Home and 1 more page - Personal - Microsoft​ Edge' /&gt;&lt;ctrl name='GeBIZ | Home' role='document' /&gt;&lt;ctrl idx='83' role='grouping' /&gt;">
                   <ui:Target.ClippingRegion>
-                    <ui:Region Rectangle="1, 2, 209, 38" />
+                    <ui:Region Rectangle="7, 7, 199, 33" />
                   </ui:Target.ClippingRegion>
                   <ui:Target.TimeoutMS>
                     <InArgument x:TypeArguments="x:Int32" />
@@ -183,10 +183,10 @@
                 </ui:Target>
               </ui:Click.Target>
             </ui:Click>
-            <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="Delay_6" />
+            <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="Delay_6" />
             <ui:WaitUiElementAppear FoundElement="{x:Null}" WaitActive="{x:Null}" WaitVisible="{x:Null}" DisplayName="Find Element 'Passord login'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_2">
               <ui:WaitUiElementAppear.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="60370de8-8dce-4590-8f1c-3a909f2c688a" InformativeScreenshot="680176bb14bcd5de236f9229ba722ff7" Selector="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='Singpass login - Personal - Microsoft​ Edge' /&gt;&lt;ctrl name='Singpass login' role='document' /&gt;&lt;ctrl name='Password login' role='page tab' /&gt;">
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="60370de8-8dce-4590-8f1c-3a909f2c688a" InformativeScreenshot="680176bb14bcd5de236f9229ba722ff7" Selector="&lt;html app='msedge.exe' title='Singpass login' /&gt;&lt;webctrl parentid='SpQrToggle-1FATab' tag='SPAN' /&gt;">
                   <ui:Target.TimeoutMS>
                     <InArgument x:TypeArguments="x:Int32" />
                   </ui:Target.TimeoutMS>
@@ -208,7 +208,7 @@
                 </ui:CursorPosition>
               </ui:Click.CursorPosition>
               <ui:Click.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="72ca459e-410c-4cb4-9885-8ca731588faf" InformativeScreenshot="680176bb14bcd5de236f9229ba722ff7" Selector="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='Singpass login - Personal - Microsoft​ Edge' /&gt;&lt;ctrl name='Singpass login' role='document' /&gt;&lt;ctrl name='Password login' role='page tab' /&gt;">
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="72ca459e-410c-4cb4-9885-8ca731588faf" InformativeScreenshot="fdeede0f62acaa056e13ffde312416cc" Selector="&lt;html app='msedge.exe' title='Singpass login' /&gt;&lt;webctrl parentid='SpQrToggle-1FATab' tag='SPAN' /&gt;">
                   <ui:Target.TimeoutMS>
                     <InArgument x:TypeArguments="x:Int32" />
                   </ui:Target.TimeoutMS>
