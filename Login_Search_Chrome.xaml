@@ -75,7 +75,7 @@
         <x:Boolean x:Key="IsPinned">False</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <p:GetSecureCredential sap2010:Annotation.AnnotationText="Pre-condition:&#xA;Create local Singpass account in Credential Manager" CredentialType="Generic" DisplayName="Get Secure Credentials - Singpass" sap:VirtualizedContainerService.HintSize="467,79" sap2010:WorkflowViewState.IdRef="GetSecureCredential_1" Password="[password]" PersistanceType="Enterprise" Target="Singpass" Username="[username]">
+    <p:GetSecureCredential sap2010:Annotation.AnnotationText="Pre-condition:&#xA;Create local Singpass account in Credential Manager. " CredentialType="Generic" DisplayName="Get Secure Credentials - Singpass" sap:VirtualizedContainerService.HintSize="467,79" sap2010:WorkflowViewState.IdRef="GetSecureCredential_1" Password="[password]" PersistanceType="Enterprise" Target="Singpass" Username="[username]">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
