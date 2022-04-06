@@ -35,7 +35,11 @@
       "privateWorkflows": []
     },
     "processOptions": {
-      "ignoredFiles": []
+      "ignoredFiles": [
+        "GetTenderId.xaml",
+        "test.xaml",
+        "GetTenderId2.xaml"
+      ]
     },
     "fileInfoCollection": [],
     "modernBehavior": false
