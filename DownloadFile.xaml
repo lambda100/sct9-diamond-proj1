@@ -189,7 +189,7 @@
                                         <OutArgument x:TypeArguments="x:String">[TempFolderPath]</OutArgument>
                                       </Assign.To>
                                       <Assign.Value>
-                                        <InArgument x:TypeArguments="x:String">["C:\Users\"+system.Environment.UserName+"\Downloads"]</InArgument>
+                                        <InArgument x:TypeArguments="x:String">C:\Temp</InArgument>
                                       </Assign.Value>
                                     </Assign>
                                     <Sequence sap:VirtualizedContainerService.HintSize="476,1152" sap2010:WorkflowViewState.IdRef="Sequence_21">
