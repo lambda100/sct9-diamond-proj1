@@ -36,9 +36,7 @@
     },
     "processOptions": {
       "ignoredFiles": [
-        "GetTenderId.xaml",
-        "test.xaml",
-        "GetTenderId2.xaml"
+        "test.xaml"
       ]
     },
     "fileInfoCollection": [],
