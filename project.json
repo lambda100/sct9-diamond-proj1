@@ -1,4 +1,4 @@
-﻿{
+{
   "name": "SCT9_Diamond_Project1",
   "description": "SCT9 Project 1 for Team Diamond",
   "main": "Main.xaml",
@@ -35,9 +35,7 @@
       "privateWorkflows": []
     },
     "processOptions": {
-      "ignoredFiles": [
-        "test.xaml"
-      ]
+      "ignoredFiles": []
     },
     "fileInfoCollection": [],
     "modernBehavior": false
