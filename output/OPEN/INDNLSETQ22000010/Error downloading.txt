@@ -1,1 +1,0 @@
-Error downloading files: Either Gebiz server is experiencing technical difficulties, or Tender Owner has disabled the 'Download' button
