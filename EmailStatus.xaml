@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="EmailStatus" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1068.8,1296.8" sap2010:WorkflowViewState.IdRef="EmailStatus_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:p="http://schemas.uipath.com/workflow/activities/credentials" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ss="clr-namespace:System.Security;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="EmailStatus" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1068.8,1123.2" sap2010:WorkflowViewState.IdRef="EmailStatus_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:p="http://schemas.uipath.com/workflow/activities/credentials" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ss="clr-namespace:System.Security;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="30">
       <x:String>System.Activities</x:String>
@@ -63,7 +63,7 @@
       <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="User &quot;GmailCred&quot; in Windows Credential Manager" DisplayName="EmailStatus" sap:VirtualizedContainerService.HintSize="425.6,1192" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="User &quot;GmailCred&quot; in Windows Credential Manager" DisplayName="EmailStatus" sap:VirtualizedContainerService.HintSize="425.6,1018.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="ss:SecureString" Name="gmailPassword" />
       <Variable x:TypeArguments="x:String" Name="gmailUsername" />
@@ -78,7 +78,6 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:Comment sap:VirtualizedContainerService.HintSize="384,133.6" sap2010:WorkflowViewState.IdRef="Comment_1" Text="DOESN'T WORK&#xA;&#xA;DON'T USE&#xA;&#xA;STILL TESTING" />
     <p:GetSecureCredential sap2010:Annotation.AnnotationText="This will not work from May 2022 onwards because Gmail tightened security" CredentialType="Generic" DisplayName="Get Secure Credentials" sap:VirtualizedContainerService.HintSize="384,82.4" sap2010:WorkflowViewState.IdRef="GetSecureCredential_1" Password="[gmailPassword]" PersistanceType="Enterprise" Result="[GetCredential]" Target="GmailCred" Username="[gmailUsername]">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
