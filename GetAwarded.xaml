@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="awarded" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="665.333333333333,1660.66666666667" sap2010:WorkflowViewState.IdRef="awarded_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="awarded" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="695.333333333333,1660.66666666667" sap2010:WorkflowViewState.IdRef="awarded_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="34">
       <x:String>System.Activities</x:String>
@@ -78,28 +78,12 @@
       <Variable x:TypeArguments="x:String" Name="Aname" />
       <Variable x:TypeArguments="sd:DataTable" Name="dt_award2" />
       <Variable x:TypeArguments="sd:DataTable" Name="dt_award" />
-      <Variable x:TypeArguments="x:Int32" Name="count1">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:Int32" />
-        </Variable.Default>
-      </Variable>
-      <Variable x:TypeArguments="x:Int32" Name="count2">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:Int32" />
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="x:Int32" Default="0" Name="count1" />
+      <Variable x:TypeArguments="x:Int32" Default="0" Name="count2" />
       <Variable x:TypeArguments="x:String" Name="str_ProcCat" />
-      <Variable x:TypeArguments="x:String" Name="contentform_1">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:String">contentForm:j_idt1905</Literal>
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="x:String" Default="contentForm:j_idt1905" Name="contentform_1" />
       <Variable x:TypeArguments="x:String" Default="contentForm:j_idt1912" Name="contentform_2" />
-      <Variable x:TypeArguments="x:String" Name="id_search">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:String">contentForm:j_idt1*_searchBar_INPUT-SEARCH</Literal>
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="x:String" Default="contentForm:j_idt1*_searchBar_INPUT-SEARCH" Name="id_search" />
       <Variable x:TypeArguments="x:String" Default="contentForm:j_id5*_3" Name="webid" />
       <Variable x:TypeArguments="ui:UiElement" Name="testelem" />
     </Sequence.Variables>
@@ -111,7 +95,7 @@
     </sap:WorkflowViewStateService.ViewState>
     <ui:CommentOut sap2010:Annotation.AnnotationText="This code is to open broswe&#xA;By default comment out" DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="200,98" sap2010:WorkflowViewState.IdRef="CommentOut_34">
       <ui:CommentOut.Body>
-        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="242,190" sap2010:WorkflowViewState.IdRef="Sequence_82">
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="552.666666666667,190" sap2010:WorkflowViewState.IdRef="Sequence_82">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -150,7 +134,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:CommentOut>
-    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" sap2010:Annotation.AnnotationText="This code is to navigate to Opportunity Tab. filter by Administration &amp; Training ⇒ Courses&quot; " BrowserType="Chrome" DisplayName="Attach Browser 'chrome.exe  GeBIZ  Home'" sap:VirtualizedContainerService.HintSize="200,131.333333333333" sap2010:WorkflowViewState.IdRef="BrowserScope_15" InformativeScreenshot="a0a08825f1e374769dc1dae8e9d36ed9" Selector="&lt;html app='chrome.exe' omit:htmlwindowname='multipleWindowBlocker_WindowTab-1' title='GeBIZ | Dashboard' /&gt;">
+    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" sap2010:Annotation.AnnotationText="This code is to navigate to Opportunity Tab. filter by Administration &amp; Training ⇒ Courses&quot; " BrowserType="Chrome" DisplayName="Attach Browser 'chrome.exe  GeBIZ  Home'" sap:VirtualizedContainerService.HintSize="434,1790" sap2010:WorkflowViewState.IdRef="BrowserScope_15" InformativeScreenshot="a0a08825f1e374769dc1dae8e9d36ed9" Selector="&lt;html app='chrome.exe' title='GeBIZ | *' /&gt;">
       <ui:BrowserScope.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -351,7 +335,7 @@
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:GetAttribute ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Need to repair &lt;webctrl id='contentForm:j_idt1905' tag='A' type='link' /&gt;&#xD;&#xA;&#xD;&#xA;look for inspect webpage&#xD;&#xA;&lt;a id=&quot;contentForm:j_idt1905&quot; href=&quot;#&quot; style=&quot;border: 1px solid #ccc;background-color:#fff;padding-left: 8px;padding-right: 8px;font-size: 14px;&quot; &#xD;&#xA;&#xD;&#xA;" Attribute="aaname" DisplayName="Get Attribute" sap:VirtualizedContainerService.HintSize="334,366.666666666667" sap2010:WorkflowViewState.IdRef="GetAttribute_1">
+                  <ui:GetAttribute ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Need to repair &lt;webctrl id='contentForm:j_idt1905' tag='A' type='link' /&gt;&#xA;&#xA;look for inspect webpage&#xA;&lt;a id=&quot;contentForm:j_idt1905&quot; href=&quot;#&quot; style=&quot;border: 1px solid #ccc;background-color:#fff;padding-left: 8px;padding-right: 8px;font-size: 14px;&quot; &#xA;&#xA;" Attribute="aaname" DisplayName="Get Attribute" sap:VirtualizedContainerService.HintSize="334,366.666666666667" sap2010:WorkflowViewState.IdRef="GetAttribute_1">
                     <ui:GetAttribute.Result>
                       <OutArgument x:TypeArguments="x:String">[contentform_1]</OutArgument>
                     </ui:GetAttribute.Result>
@@ -420,7 +404,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:BrowserScope>
-    <Sequence sap2010:Annotation.AnnotationText="Need  to  repair selector &lt;webctrl parentid='contentForm:j_idt1912' tag='DIV' idx='3' /&gt;&#xD;&#xA;&#xD;&#xA;look for inspect webpage &lt;div id=&quot;contentForm:j_idt1912&quot; class=&quot;formRepeat_MAIN&quot;&gt;&lt;div class=&quot;row &quot;&gt;&lt;div " DisplayName="Data Scraping" sap:VirtualizedContainerService.HintSize="200,248" sap2010:WorkflowViewState.IdRef="Sequence_80">
+    <Sequence sap2010:Annotation.AnnotationText="Need  to  repair selector &lt;webctrl parentid='contentForm:j_idt1912' tag='DIV' idx='3' /&gt;&#xA;&#xA;look for inspect webpage &lt;div id=&quot;contentForm:j_idt1912&quot; class=&quot;formRepeat_MAIN&quot;&gt;&lt;div class=&quot;row &quot;&gt;&lt;div " DisplayName="Data Scraping" sap:VirtualizedContainerService.HintSize="200,248" sap2010:WorkflowViewState.IdRef="Sequence_80">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
