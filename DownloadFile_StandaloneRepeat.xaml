@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="ReadFromPage" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1068.8,2393.6" sap2010:WorkflowViewState.IdRef="ReadFromPage_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="ReadFromPage" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1068.8,2354.4" sap2010:WorkflowViewState.IdRef="ReadFromPage_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="37">
       <x:String>System.Activities</x:String>
@@ -76,7 +76,7 @@
       <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence sap2010:Annotation.AnnotationText="Invokes Login_Search_Chrome_Simple&#xD;&#xA;&#xD;&#xA;The idea is that every time you re-login, the &quot;download bug&quot; is fixed, so this sets is that everytime it encounters a problem, it relogs and tries again." DisplayName="DownloadFile_Standalone" sap:VirtualizedContainerService.HintSize="841.6,2328.8" sap2010:WorkflowViewState.IdRef="Sequence_112">
+  <Sequence sap2010:Annotation.AnnotationText="Invokes Login_Search_Chrome_Simple&#xA;&#xD;&#xA;The original method used by Gek doesn't allow me to catch the error, this new method saves files more traditionally and directly to the folder, but it allows errors to be caught.&#xD;&#xA;&#xA;The idea of 'Repeat' is that every time you re-login, the &quot;download bug&quot; is fixed, so this sets that everytime it encounters a problem, it relogs and tries again." DisplayName="DownloadFile_StandaloneRepeat" sap:VirtualizedContainerService.HintSize="841.6,2353.6" sap2010:WorkflowViewState.IdRef="Sequence_112">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="Tenders_dt" />
       <Variable x:TypeArguments="x:String" Name="TenderId" />
@@ -109,7 +109,7 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:Comment sap:VirtualizedContainerService.HintSize="800,152.8" sap2010:WorkflowViewState.IdRef="Comment_5" Text="EXPERIMENTAL, DONT USE&#xA;&#xA;Difficulties:&#xA;&#xA;- High chance it is Gebiz's fault that we can't download files." />
+    <ui:Comment sap:VirtualizedContainerService.HintSize="800,113.6" sap2010:WorkflowViewState.IdRef="Comment_5" Text="Difficulties:&#xA;&#xA;- High chance it is Gebiz's fault that we can't download files." />
     <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'chrome.exe GeBIZ'" sap:VirtualizedContainerService.HintSize="800,1983.2" sap2010:WorkflowViewState.IdRef="BrowserScope_20" InformativeScreenshot="b9f9bd8eafaa1351146ae30eaeefacae" Selector="&lt;html app='chrome.exe' htmlwindowname='multipleWindowBlocker_WindowTab-1' title='GeBIZ | *' /&gt;">
       <ui:BrowserScope.Body>
         <ActivityAction x:TypeArguments="x:Object">
@@ -209,7 +209,7 @@
                                 <av:PointCollection x:Key="ConnectorLocation">110.4,240.1 110.4,162.1 200,162.1</av:PointCollection>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <Sequence sap2010:Annotation.AnnotationText="Relogin" sap:VirtualizedContainerService.HintSize="475.2,540" sap2010:WorkflowViewState.IdRef="Sequence_210">
+                            <Sequence sap2010:Annotation.AnnotationText="Relogin" sap:VirtualizedContainerService.HintSize="200,100" sap2010:WorkflowViewState.IdRef="Sequence_210">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -255,7 +255,7 @@
                                     <av:PointCollection x:Key="ConnectorLocation">300,196.5 300,246.5</av:PointCollection>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                                <Sequence DisplayName="Seq - Search &amp; Download" sap:VirtualizedContainerService.HintSize="200,68.8" sap2010:WorkflowViewState.IdRef="Sequence_209">
+                                <Sequence DisplayName="Seq - Search &amp; Download" sap:VirtualizedContainerService.HintSize="475.2,730.4" sap2010:WorkflowViewState.IdRef="Sequence_209">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -274,7 +274,7 @@
                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
-                                          <Flowchart DisplayName="Flowchart - Search process" sap:VirtualizedContainerService.HintSize="633.6,636.8" sap2010:WorkflowViewState.IdRef="Flowchart_12">
+                                          <Flowchart DisplayName="Flowchart - Search process" sap:VirtualizedContainerService.HintSize="333.6,52.8" sap2010:WorkflowViewState.IdRef="Flowchart_12">
                                             <sap:WorkflowViewStateService.ViewState>
                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -553,7 +553,7 @@
                                               <InArgument x:TypeArguments="x:Int32">0</InArgument>
                                             </Assign.Value>
                                           </Assign>
-                                          <Flowchart DisplayName="Flowchart - Download process" sap:VirtualizedContainerService.HintSize="333.6,52.8" sap2010:WorkflowViewState.IdRef="Flowchart_13">
+                                          <Flowchart DisplayName="Flowchart - Download process" sap:VirtualizedContainerService.HintSize="634.4,880.8" sap2010:WorkflowViewState.IdRef="Flowchart_13">
                                             <Flowchart.Variables>
                                               <Variable x:TypeArguments="x:Boolean" Name="DownloadEnabled_exists" />
                                             </Flowchart.Variables>
@@ -622,7 +622,11 @@
                                                           <Sequence DisplayName="End Seq - Dl btn is available" sap:VirtualizedContainerService.HintSize="636.8,3802.4" sap2010:WorkflowViewState.IdRef="Sequence_206">
                                                             <Sequence.Variables>
                                                               <Variable x:TypeArguments="x:Int32" Name="TimestampSecondsStart" />
-                                                              <Variable x:TypeArguments="x:Int32" Default="10" Name="TimeLapseInSeconds" />
+                                                              <Variable x:TypeArguments="x:Int32" Name="TimeLapseInSeconds">
+                                                                <Variable.Default>
+                                                                  <Literal x:TypeArguments="x:Int32" Value="10" />
+                                                                </Variable.Default>
+                                                              </Variable>
                                                               <Variable x:TypeArguments="x:String" Name="FullPath" />
                                                             </Sequence.Variables>
                                                             <sap:WorkflowViewStateService.ViewState>
@@ -654,7 +658,7 @@
                                                                         </ui:CursorPosition>
                                                                       </ui:Click.CursorPosition>
                                                                       <ui:Click.Target>
-                                                                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="9ca908a7-a71a-49ba-9997-e9733bd03e5d" InformativeScreenshot="bf93e18cb970c9c87643578ace3e392a" Selector="&lt;html app='chrome.exe' htmlwindowname='multipleWindowBlocker_WindowTab-1' title='GeBIZ | Opportunity Details' /&gt;&lt;webctrl tag='INPUT' type='submit' aaname='Download All' /&gt;" TimeoutMS="3000">
+                                                                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="9ca908a7-a71a-49ba-9997-e9733bd03e5d" InformativeScreenshot="bf93e18cb970c9c87643578ace3e392a" Selector="&lt;html app='chrome.exe' htmlwindowname='multipleWindowBlocker_WindowTab-1' title='GeBIZ | Opportunity Details' /&gt;&lt;webctrl tag='INPUT' type='submit' aaname='Download All*' /&gt;" TimeoutMS="3000">
                                                                           <ui:Target.WaitForReady>
                                                                             <InArgument x:TypeArguments="ui:WaitForReady" />
                                                                           </ui:Target.WaitForReady>
