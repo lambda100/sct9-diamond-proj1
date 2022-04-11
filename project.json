@@ -1,11 +1,11 @@
-﻿{
+{
   "name": "SCT9_Diamond_Project1",
   "description": "SCT9 Project 1 for Team Diamond",
   "main": "Main.xaml",
   "dependencies": {
     "UiPath.Credentials.Activities": "[2.0.0]",
     "UiPath.Excel.Activities": "[2.9.5]",
-    "UiPath.Mail.Activities": "[1.9.5]",
+    "UiPath.Mail.Activities": "[1.12.3]",
     "UiPath.System.Activities": "[20.10.4]",
     "UiPath.UIAutomation.Activities": "[21.10.5]"
   },

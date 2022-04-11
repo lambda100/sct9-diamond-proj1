@@ -1,0 +1,5 @@
+Dear Majestic,
+
+Job run successfully.
+Status: Completed {date}
+File Storage: C:\Output
