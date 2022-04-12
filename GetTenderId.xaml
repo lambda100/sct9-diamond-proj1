@@ -5,7 +5,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1068.8,1540</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>695.333333333333,1554</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>GetTenderId_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="35">
@@ -77,12 +77,16 @@
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="" DisplayName="GetTenderId" sap:VirtualizedContainerService.HintSize="516.8,1475.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="" DisplayName="GetTenderId" sap:VirtualizedContainerService.HintSize="518,1489.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="strtenderid" />
       <Variable x:TypeArguments="x:String" Name="Quoteid" />
       <Variable x:TypeArguments="x:String" Name="SQid" />
-      <Variable x:TypeArguments="x:Int32" Default="0" Name="count" />
+      <Variable x:TypeArguments="x:Int32" Name="count">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:Int32" />
+        </Variable.Default>
+      </Variable>
       <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
       <Variable x:TypeArguments="sd:DataTable" Name="dt_tenderid" />
       <Variable x:TypeArguments="x:String" Default="contentForm:j_idt1831" Name="j_idt" />
@@ -94,15 +98,15 @@
         <x:Boolean x:Key="IsPinned">False</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:CommentOut sap2010:Annotation.AnnotationText="This is code is to open GeBiz Page and filter to &quot;Administration &amp; Training ⇒ Courses&quot; on Opportunity page.&#xA;&#xA;Take note: GeBiz does not allow multiple window session open to access the same page.  To overcome need to close all browsers.&#xA;" DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="475.2,256.8" sap2010:WorkflowViewState.IdRef="CommentOut_22">
+    <ui:CommentOut sap2010:Annotation.AnnotationText="This is code is to open GeBiz Page and filter to &quot;Administration &amp; Training ⇒ Courses&quot; on Opportunity page.&#xA;&#xA;Take note: GeBiz does not allow multiple window session open to access the same page.  To overcome need to close all browsers.&#xA;" DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="476,264.666666666667" sap2010:WorkflowViewState.IdRef="CommentOut_22">
       <ui:CommentOut.Body>
-        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="550.4,967.2" sap2010:WorkflowViewState.IdRef="Sequence_68">
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="508.666666666667,972" sap2010:WorkflowViewState.IdRef="Sequence_68">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" sap2010:Annotation.AnnotationText="This is code is to open GeBiz Page and filter to &quot;Administration &amp; Training ⇒ Courses&quot; on Opportunity page.&#xA;&#xA;Take note: GeBiz does not allow multiple window session open to access the same page.  To overcome need to close all browsers.&#xA;" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="466.4,880" sap2010:WorkflowViewState.IdRef="OpenBrowser_2" NewSession="True" Url="https://www.gebiz.gov.sg/">
+          <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" sap2010:Annotation.AnnotationText="This is code is to open GeBiz Page and filter to &quot;Administration &amp; Training ⇒ Courses&quot; on Opportunity page.&#xA;&#xA;Take note: GeBiz does not allow multiple window session open to access the same page.  To overcome need to close all browsers.&#xA;" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="466.666666666667,880" sap2010:WorkflowViewState.IdRef="OpenBrowser_2" NewSession="True" Url="https://www.gebiz.gov.sg/">
             <ui:OpenBrowser.Body>
               <ActivityAction x:TypeArguments="x:Object">
                 <ActivityAction.Argument>
@@ -213,7 +217,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:CommentOut>
-    <Sequence sap2010:Annotation.AnnotationText="This code scrap Quotation id and tender id from  Opportunity page&#xA;need to repair &#xA;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='contentForm:j_idt1831' tag='DIV' /&gt;" DisplayName="Data Scraping" sap:VirtualizedContainerService.HintSize="475.2,548" sap2010:WorkflowViewState.IdRef="Sequence_92">
+    <Sequence sap2010:Annotation.AnnotationText="This code scrap Quotation id and tender id from  Opportunity page&#xA;need to repair &#xA;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='contentForm:j_idt1831' tag='DIV' /&gt;" DisplayName="Data Scraping" sap:VirtualizedContainerService.HintSize="476,548" sap2010:WorkflowViewState.IdRef="Sequence_92">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -221,21 +225,21 @@
           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'GeBIZOppo Page'" sap:VirtualizedContainerService.HintSize="433.6,347.2" sap2010:WorkflowViewState.IdRef="BrowserScope_16" InformativeScreenshot="73d5274469af61951b0109af165e1c0c" Selector="&lt;html app='chrome.exe' title='GeBIZ | *' /&gt;">
+      <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'GeBIZOppo Page'" sap:VirtualizedContainerService.HintSize="434,344" sap2010:WorkflowViewState.IdRef="BrowserScope_16" InformativeScreenshot="73d5274469af61951b0109af165e1c0c" Selector="&lt;html app='chrome.exe' omit:htmlwindowname='multipleWindowBlocker_WindowTab-1' title='GeBIZ | Opportunities' /&gt;">
         <ui:BrowserScope.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="375.2,200" sap2010:WorkflowViewState.IdRef="Sequence_91">
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,198" sap2010:WorkflowViewState.IdRef="Sequence_91">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:ExtractData DelayBetweenPagesMS="{x:Null}" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Structured Data 'DIV'" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column1' attr='text'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="ExtractData_15" MaxNumberOfResults="50" NextLinkSelector="&lt;webctrl id='contentForm:j_idt1831:j_idt1882_Next_*' tag='INPUT' type='submit' /&gt;" SimulateClick="True">
+              <ui:ExtractData DelayBetweenPagesMS="{x:Null}" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Structured Data 'DIV'" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column1' attr='text'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ExtractData_15" MaxNumberOfResults="23" NextLinkSelector="&lt;webctrl id='contentForm:j_idt*:j_idt*_Next_*' tag='INPUT' type='submit' /&gt;" SimulateClick="True">
                 <ui:ExtractData.Target>
-                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d83d4888-40ea-4cb4-be58-93fc87a37ec0" InformativeScreenshot="12ce0fa900f85e3f6e9f141da0e9c389" Selector="&lt;webctrl parentid='contentForm:j_idt1831' tag='DIV' idx='3' /&gt;" WaitForReady="COMPLETE">
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d83d4888-40ea-4cb4-be58-93fc87a37ec0" InformativeScreenshot="12ce0fa900f85e3f6e9f141da0e9c389" Selector="&lt;webctrl parentclass='formRepeat_MAIN' tag='DIV' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='contentForm:j_idt????' tag='DIV' /&gt;" WaitForReady="COMPLETE">
                     <ui:Target.TimeoutMS>
                       <InArgument x:TypeArguments="x:Int32" />
                     </ui:Target.TimeoutMS>
@@ -247,23 +251,23 @@
         </ui:BrowserScope.Body>
       </ui:BrowserScope>
     </Sequence>
-    <ui:CommentOut sap2010:Annotation.AnnotationText="This code is to test the ouptut result" DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="475.2,96.8" sap2010:WorkflowViewState.IdRef="CommentOut_30">
+    <ui:CommentOut sap2010:Annotation.AnnotationText="This code is to test the ouptut result" DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="476,98" sap2010:WorkflowViewState.IdRef="CommentOut_30">
       <ui:CommentOut.Body>
-        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="312.8,341.6" sap2010:WorkflowViewState.IdRef="Sequence_81">
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="313.333333333333,340" sap2010:WorkflowViewState.IdRef="Sequence_81">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <Sequence sap2010:Annotation.AnnotationText="This code is to test the ouptut result" sap:VirtualizedContainerService.HintSize="271.2,248.8" sap2010:WorkflowViewState.IdRef="Sequence_42">
+          <Sequence sap2010:Annotation.AnnotationText="This code is to test the ouptut result" sap:VirtualizedContainerService.HintSize="271.333333333333,247.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_42">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:OutputDataTable DataTable="[ExtractDataTable]" DisplayName="Output Data Table" sap:VirtualizedContainerService.HintSize="229.6,22.4" sap2010:WorkflowViewState.IdRef="OutputDataTable_3" Text="[strtenderid]" />
-            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="229.6,62.4" sap2010:WorkflowViewState.IdRef="WriteLine_5" Text="[strtenderid]" />
+            <ui:OutputDataTable DataTable="[ExtractDataTable]" DisplayName="Output Data Table" sap:VirtualizedContainerService.HintSize="229.333333333333,22" sap2010:WorkflowViewState.IdRef="OutputDataTable_3" Text="[strtenderid]" />
+            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="229.333333333333,62.6666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_5" Text="[strtenderid]" />
           </Sequence>
         </Sequence>
       </ui:CommentOut.Body>
@@ -275,7 +279,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:CommentOut>
-    <Sequence sap2010:Annotation.AnnotationText="This code is a workaround to get rid &quot;publish date&quot; and reduance data in the quoteid/ tender id output" DisplayName="Data Cleaning" sap:VirtualizedContainerService.HintSize="475.2,144.8" sap2010:WorkflowViewState.IdRef="Sequence_51">
+    <Sequence sap2010:Annotation.AnnotationText="This code is a workaround to get rid &quot;publish date&quot; and reduance data in the quoteid/ tender id output" DisplayName="Data Cleaning" sap:VirtualizedContainerService.HintSize="476,148" sap2010:WorkflowViewState.IdRef="Sequence_51">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -439,7 +443,7 @@
         </sap:WorkflowViewStateService.ViewState>
       </ui:ForEachRow>
     </Sequence>
-    <Sequence sap2010:Annotation.AnnotationText="This code is build to write result  output and output to CSV file for testing and record purposes. " DisplayName="Output CSV" sap:VirtualizedContainerService.HintSize="475.2,144.8" sap2010:WorkflowViewState.IdRef="Sequence_50">
+    <Sequence sap2010:Annotation.AnnotationText="This code is build to write result  output and output to CSV file for testing and record purposes. " DisplayName="Output CSV" sap:VirtualizedContainerService.HintSize="476,148" sap2010:WorkflowViewState.IdRef="Sequence_50">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
