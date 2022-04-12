@@ -84,7 +84,7 @@
       <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence sap2010:Annotation.AnnotationText="Invoked by GetOverview&#xD;&#xA;Invokes Login_Search_Chrome_Simple&#xA;&#xA;The original method used by Gek doesn't allow me to catch the error, this new method saves files more traditionally and directly to the folder, but it allows errors to be caught.&#xA;&#xA;The idea of 'Repeat' is that every time you re-login, the &quot;download bug&quot; is fixed, so this sets that everytime it encounters a problem, it relogs and tries again." DisplayName="DownloadFile" sap:VirtualizedContainerService.HintSize="675.2,1428" sap2010:WorkflowViewState.IdRef="Sequence_112">
+  <Sequence sap2010:Annotation.AnnotationText="Invoked by GetOverview&#xA;Invokes Login_Search_Chrome_Simple&#xA;&#xA;The original method used by Gek doesn't allow me to catch the error, this new method saves files more traditionally and directly to the folder, but it allows errors to be caught.&#xA;&#xA;The idea of 'Repeat' is that every time you re-login, the &quot;download bug&quot; is fixed, so this sets that everytime it encounters a problem, it relogs and tries again." DisplayName="DownloadFile" sap:VirtualizedContainerService.HintSize="675.2,1428" sap2010:WorkflowViewState.IdRef="Sequence_112">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="Tenders_dt" />
       <Variable x:TypeArguments="x:String" Name="TenderId" />
@@ -218,7 +218,7 @@
                     <av:PointCollection x:Key="ConnectorLocation">300,196.5 300,246.5</av:PointCollection>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <Sequence DisplayName="Seq - Search &amp; Download" sap:VirtualizedContainerService.HintSize="200,68.8" sap2010:WorkflowViewState.IdRef="Sequence_229">
+                <Sequence DisplayName="Seq - Search &amp; Download" sap:VirtualizedContainerService.HintSize="751.2,1558.4" sap2010:WorkflowViewState.IdRef="Sequence_229">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -269,7 +269,7 @@
                                       <av:PointCollection x:Key="ConnectorLocation">100,263.6 100,162.1 200,162.1</av:PointCollection>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="200,52.8" sap2010:WorkflowViewState.IdRef="LogMessage_26" Level="Warn" Message="[&quot;Error: &quot; + TenderID + &quot;: Website can't find the opportunity. Retrying.&quot;]">
+                                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="200,52.8" sap2010:WorkflowViewState.IdRef="LogMessage_26" Level="Warn" Message="[&quot;Warn: &quot; + TenderID + &quot;: Website can't find the opportunity. Retrying.&quot;]">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -285,7 +285,7 @@
                                           <av:PointCollection x:Key="ConnectorLocation">300,196.5 300,226.5 300.241666666667,226.5 300.241666666667,246.5</av:PointCollection>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
-                                      <Sequence sap:VirtualizedContainerService.HintSize="475.2,1135.2" sap2010:WorkflowViewState.IdRef="Sequence_218">
+                                      <Sequence sap:VirtualizedContainerService.HintSize="200,68.8" sap2010:WorkflowViewState.IdRef="Sequence_218">
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -829,7 +829,7 @@
                                                 <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="561.6,712" sap2010:WorkflowViewState.IdRef="Catch`1_5">
                                                   <sap:WorkflowViewStateService.ViewState>
                                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                     </scg:Dictionary>
                                                   </sap:WorkflowViewStateService.ViewState>
@@ -843,7 +843,7 @@
                                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                         </scg:Dictionary>
                                                       </sap:WorkflowViewStateService.ViewState>
-                                                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="435.2,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_27" Level="Error" Message="[&quot;Error: &quot; + TenderId + &quot;: Timeout.&quot;]" />
+                                                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="435.2,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_27" Level="Warn" Message="[&quot;Warn: &quot; + TenderId + &quot;: Timeout.&quot;]" />
                                                       <ui:CommentOut sap2010:Annotation.AnnotationText="Disabled so it won't generate the error notice while retrying." DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="435.2,316" sap2010:WorkflowViewState.IdRef="CommentOut_2">
                                                         <ui:CommentOut.Body>
                                                           <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="375.2,206.4" sap2010:WorkflowViewState.IdRef="Sequence_223">
@@ -896,7 +896,7 @@
                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                               </scg:Dictionary>
                                             </sap:WorkflowViewStateService.ViewState>
-                                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="333.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_28" Level="Warn" Message="[&quot;Error: &quot; + TenderId + &quot;: Download button not available. Retrying.&quot;]">
+                                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="333.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_28" Level="Warn" Message="[&quot;Warn: &quot; + TenderId + &quot;: Download button not available. Retrying.&quot;]">
                                               <sap:WorkflowViewStateService.ViewState>
                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -969,7 +969,7 @@
                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
-                                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="333.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_29" Level="Warn" Message="[&quot;Error: &quot; + TenderId + &quot;: Button disabled. Retrying.&quot;]" />
+                                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="333.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_29" Level="Warn" Message="[&quot;Warn: &quot; + TenderId + &quot;: Button disabled. Retrying.&quot;]" />
                                         <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke DownloadFileErrorCatch workflow" sap:VirtualizedContainerService.HintSize="333.6,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_13" UnSafe="False" WorkflowFileName="DownloadFileErrorCatch.xaml">
                                           <ui:InvokeWorkflowFile.Arguments>
                                             <InArgument x:TypeArguments="x:String" x:Key="in_TenderId">[TenderId]</InArgument>
