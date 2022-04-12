@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="ReadFromPage" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1068.8,5836" sap2010:WorkflowViewState.IdRef="ReadFromPage_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="ReadFromPage" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1068.8,6011.2" sap2010:WorkflowViewState.IdRef="ReadFromPage_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="36">
       <x:String>System.Activities</x:String>
@@ -75,7 +75,7 @@
       <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="GetOverview v2" sap:VirtualizedContainerService.HintSize="851.2,5731.2" sap2010:WorkflowViewState.IdRef="Sequence_112">
+  <Sequence DisplayName="GetOverview v2" sap:VirtualizedContainerService.HintSize="851.2,5946.4" sap2010:WorkflowViewState.IdRef="Sequence_112">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="Tenders_dt" />
       <Variable x:TypeArguments="x:String" Name="TenderId" />
@@ -107,13 +107,13 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:Comment sap:VirtualizedContainerService.HintSize="809.6,345.6" sap2010:WorkflowViewState.IdRef="Comment_5" Text="TODO:&#xA;&#xA;- (Blank)&#xA;&#xA;Bug:&#xA;&#xA;- Speed of clicking on link [Resolved]&#xA;- Chance of DownloadFile not working, possible cause is Gebiz itself&#xA;&#xA;Difficulties:&#xA;&#xA;- Gebiz is not stable&#xA;- UiPath is not stable&#xA;- UiPath's connection to GitHub is not stable" />
-    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'chrome.exe GeBIZ'" sap:VirtualizedContainerService.HintSize="809.6,5252.8" sap2010:WorkflowViewState.IdRef="BrowserScope_20" InformativeScreenshot="b9f9bd8eafaa1351146ae30eaeefacae" Selector="&lt;html app='chrome.exe' htmlwindowname='multipleWindowBlocker_WindowTab-1' title='GeBIZ | *' /&gt;">
+    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'chrome.exe GeBIZ'" sap:VirtualizedContainerService.HintSize="809.6,5468" sap2010:WorkflowViewState.IdRef="BrowserScope_20" InformativeScreenshot="b9f9bd8eafaa1351146ae30eaeefacae" Selector="&lt;html app='chrome.exe' htmlwindowname='multipleWindowBlocker_WindowTab-1' title='GeBIZ | *' /&gt;">
       <ui:BrowserScope.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="776,5105.6" sap2010:WorkflowViewState.IdRef="Sequence_166">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="776,5320.8" sap2010:WorkflowViewState.IdRef="Sequence_166">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="Tenders_str" />
             </Sequence.Variables>
@@ -141,13 +141,13 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:BuildDataTable>
-            <ui:ForEachRow CurrentIndex="{x:Null}" DataTable="[Tenders_dt]" DisplayName="For Each Row in Tenders DT" sap:VirtualizedContainerService.HintSize="734.4,4000" sap2010:WorkflowViewState.IdRef="ForEachRow_13">
+            <ui:ForEachRow CurrentIndex="{x:Null}" DataTable="[Tenders_dt]" DisplayName="For Each Row in Tenders DT" sap:VirtualizedContainerService.HintSize="734.4,4215.2" sap2010:WorkflowViewState.IdRef="ForEachRow_13">
               <ui:ForEachRow.Body>
                 <ActivityAction x:TypeArguments="sd:DataRow">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="684.8,3851.2" sap2010:WorkflowViewState.IdRef="Sequence_111">
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="684.8,4066.4" sap2010:WorkflowViewState.IdRef="Sequence_111">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1071,11 +1071,27 @@
                         </sap:WorkflowViewStateService.ViewState>
                       </ui:ForEachRow>
                     </Sequence>
-                    <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke DownloadFile.xaml" sap:VirtualizedContainerService.HintSize="643.2,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="DownloadFile.xaml">
-                      <ui:InvokeWorkflowFile.Arguments>
-                        <scg:Dictionary x:TypeArguments="x:String, Argument" />
-                      </ui:InvokeWorkflowFile.Arguments>
-                    </ui:InvokeWorkflowFile>
+                    <ui:CommentOut sap2010:Annotation.AnnotationText="Disabled. Use either DownloadFile_Standalone or DownloadFIle_StandaloneRepeat after this." DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="643.2,328.8" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+                      <ui:CommentOut.Body>
+                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="375.2,206.4" sap2010:WorkflowViewState.IdRef="Sequence_186">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke DownloadFile.xaml" sap:VirtualizedContainerService.HintSize="333.6,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="DownloadFile.xaml">
+                            <ui:InvokeWorkflowFile.Arguments>
+                              <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                            </ui:InvokeWorkflowFile.Arguments>
+                          </ui:InvokeWorkflowFile>
+                        </Sequence>
+                      </ui:CommentOut.Body>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ui:CommentOut>
                     <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{TenderId, PageName, Agency, DatePublished, DateClosing, DateBriefing, Contact1Name, ContactDetails_list(0), ContactDetails_list(1), ContactDetails_list(2), ContactDetails_list(3)}]" DataTable="[Pages_dt]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="643.2,22.4" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
                   </Sequence>
                 </ActivityAction>
