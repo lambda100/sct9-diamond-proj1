@@ -212,7 +212,7 @@
                                     <av:PointCollection x:Key="ConnectorLocation">300,196.5 300,226.5 300.241666666667,226.5 300.241666666667,246.5</av:PointCollection>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                                <Sequence sap:VirtualizedContainerService.HintSize="200,68.8" sap2010:WorkflowViewState.IdRef="Sequence_174">
+                                <Sequence sap:VirtualizedContainerService.HintSize="375.2,895.2" sap2010:WorkflowViewState.IdRef="Sequence_174">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -309,7 +309,7 @@
                                   </ui:SendHotkey>
                                   <ui:UiElementExists DisplayName="Check for Error &quot;No Opportunity Found&quot;" Exists="[Error_NoOpportunityFound_exists]" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="UiElementExists_15">
                                     <ui:UiElementExists.Target>
-                                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="7c494cf0-de33-4184-9ab4-22a4e1c10490" InformativeScreenshot="0944db7a2122c28d79a145d3dcb6c46e" Selector="&lt;webctrl isleaf='1' tag='DIV' aaname='No opportunity found for your search.' innertext='No opportunity found for your search.' /&gt;" TimeoutMS="1000">
+                                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="7c494cf0-de33-4184-9ab4-22a4e1c10490" InformativeScreenshot="0944db7a2122c28d79a145d3dcb6c46e" Selector="&lt;webctrl tag='DIV' aaname='No opportunity found*' innertext='No opportunity found*' /&gt;" TimeoutMS="1000">
                                         <ui:Target.WaitForReady>
                                           <InArgument x:TypeArguments="ui:WaitForReady" />
                                         </ui:Target.WaitForReady>
