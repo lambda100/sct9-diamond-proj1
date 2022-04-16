@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="CombineSheet" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="708,708" sap2010:WorkflowViewState.IdRef="CombineSheet_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="CombineSheet" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="832.666666666667,4693.33333333333" sap2010:WorkflowViewState.IdRef="CombineSheet_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="36">
       <x:String>System.Activities</x:String>
@@ -75,18 +75,22 @@
       <x:Boolean x:Key="ShouldExpandAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="CombineSheet" sap:VirtualizedContainerService.HintSize="842.666666666667,2620.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="CombineSheet" sap:VirtualizedContainerService.HintSize="842.666666666667,4628.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dt_csv1" />
       <Variable x:TypeArguments="sd:DataTable" Name="dt_csv2" />
       <Variable x:TypeArguments="x:String" Name="filename" />
       <Variable x:TypeArguments="x:Double" Name="totcount" />
-      <Variable x:TypeArguments="x:Int32" Default="1" Name="ExcelType" />
+      <Variable x:TypeArguments="x:Int32" Name="ExcelType">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:Int32" Value="1" />
+        </Variable.Default>
+      </Variable>
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        <x:Boolean x:Key="IsPinned">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:ReadCsvFile Encoding="{x:Null}" sap2010:Annotation.AnnotationText="This code read in OpenBids CSV file" DataTable="[dt_csv1]" Delimitator="Comma" DisplayName="Read CSV" FilePath="output\OPEN\OpenBids.csv" sap:VirtualizedContainerService.HintSize="800.666666666667,98" sap2010:WorkflowViewState.IdRef="ReadCsvFile_1">
@@ -107,27 +111,27 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:ReadCsvFile>
-    <ui:ExcelApplicationScope Password="{x:Null}" sap2010:Annotation.AnnotationText="This code is to merge all the CSV files into one single Bids excel file.&#xA;Data Visualization is build from here" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="636,2428" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" InstanceCachePeriod="3000" WorkbookPath="output\Bids.xlsx">
+    <ui:ExcelApplicationScope Password="{x:Null}" sap2010:Annotation.AnnotationText="This code is to merge all the CSV files into one single Bids excel file.&#xA;Data Visualization is build from here" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="800.666666666667,4124.66666666667" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" InstanceCachePeriod="3000" WorkbookPath="output\Bids.xlsx">
       <ui:ExcelApplicationScope.Body>
         <ActivityAction x:TypeArguments="ui:WorkbookApplication">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
           </ActivityAction.Argument>
-          <Sequence sap:VirtualizedContainerService.HintSize="602,2274" sap2010:WorkflowViewState.IdRef="Sequence_57">
+          <Sequence sap:VirtualizedContainerService.HintSize="766.666666666667,3930.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_57">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Sequence DisplayName="CSV Merging into excel" sap:VirtualizedContainerService.HintSize="560,2182" sap2010:WorkflowViewState.IdRef="Sequence_35">
+            <Sequence DisplayName="CSV Merging into excel" sap:VirtualizedContainerService.HintSize="724.666666666667,3838.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_35">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="518,2090" sap2010:WorkflowViewState.IdRef="Sequence_2">
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="682.666666666667,3746.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_2">
                 <Sequence.Variables>
                   <Variable x:TypeArguments="sd:DataTable" Name="dt_Qty" />
                 </Sequence.Variables>
@@ -137,28 +141,28 @@
                     <x:Boolean x:Key="IsPinned">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ui:ExcelInsertDeleteRows sap2010:Annotation.AnnotationText="Clear data for OpenBids" DisplayName="Insert/Delete Rows" sap:VirtualizedContainerService.HintSize="476,52.6666666666667" sap2010:WorkflowViewState.IdRef="ExcelInsertDeleteRows_1" Mode="Remove" NoRows="100" Position="2" SheetName="OpenBids">
+                <ui:ExcelInsertDeleteRows sap2010:Annotation.AnnotationText="Clear data for OpenBids" DisplayName="Insert/Delete Rows" sap:VirtualizedContainerService.HintSize="640.666666666667,52.6666666666667" sap2010:WorkflowViewState.IdRef="ExcelInsertDeleteRows_1" Mode="Remove" NoRows="100" Position="2" SheetName="OpenBids">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </ui:ExcelInsertDeleteRows>
-                <ui:ExcelInsertDeleteRows sap2010:Annotation.AnnotationText="Clear data for Awarded" DisplayName="Insert/Delete Rows" sap:VirtualizedContainerService.HintSize="476,52.6666666666667" sap2010:WorkflowViewState.IdRef="ExcelInsertDeleteRows_2" Mode="Remove" NoRows="100" Position="2" SheetName="Awarded">
+                <ui:ExcelInsertDeleteRows sap2010:Annotation.AnnotationText="Clear data for Awarded" DisplayName="Insert/Delete Rows" sap:VirtualizedContainerService.HintSize="640.666666666667,52.6666666666667" sap2010:WorkflowViewState.IdRef="ExcelInsertDeleteRows_2" Mode="Remove" NoRows="100" Position="2" SheetName="Awarded">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </ui:ExcelInsertDeleteRows>
-                <ui:ExcelInsertDeleteColumns sap2010:Annotation.AnnotationText="Insert Column for Quantity and UOM at column 15 and 16" DisplayName="Insert/Delete Columns" sap:VirtualizedContainerService.HintSize="476,84" sap2010:WorkflowViewState.IdRef="ExcelInsertDeleteColumns_2" Mode="Remove" NoColumns="2" Position="15" SheetName="OpenBids">
+                <ui:ExcelInsertDeleteColumns sap2010:Annotation.AnnotationText="Insert Column for Quantity and UOM at column 15 and 16" DisplayName="Insert/Delete Columns" sap:VirtualizedContainerService.HintSize="640.666666666667,84" sap2010:WorkflowViewState.IdRef="ExcelInsertDeleteColumns_2" Mode="Remove" NoColumns="2" Position="15" SheetName="OpenBids">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </ui:ExcelInsertDeleteColumns>
-                <ui:ExcelWriteRange AddHeaders="True" DataTable="[dt_csv1]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="476,52.6666666666667" sap2010:WorkflowViewState.IdRef="ExcelWriteRange_1" SheetName="OpenBids">
+                <ui:ExcelWriteRange AddHeaders="True" DataTable="[dt_csv1]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="640.666666666667,52.6666666666667" sap2010:WorkflowViewState.IdRef="ExcelWriteRange_1" SheetName="OpenBids">
                   <ui:ExcelWriteRange.StartingCell>
                     <InArgument x:TypeArguments="x:String">
                       <Literal x:TypeArguments="x:String" Value="" />
@@ -171,83 +175,83 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </ui:ExcelWriteRange>
-                <ui:ExcelInsertDeleteColumns DisplayName="Insert/Delete Columns" sap:VirtualizedContainerService.HintSize="476,22" sap2010:WorkflowViewState.IdRef="ExcelInsertDeleteColumns_1" Mode="Add" NoColumns="2" Position="15" SheetName="OpenBids" />
-                <ui:ExcelWriteCell Cell="O1" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="476,52.6666666666667" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_1" SheetName="OpenBids" Text="Quantity" />
-                <ui:ExcelWriteCell Cell="P1" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="476,52.6666666666667" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_2" SheetName="OpenBids" Text="UOM" />
-                <ui:ExcelReadCell Cell="C8" DisplayName="Read Cell" sap:VirtualizedContainerService.HintSize="476,52.6666666666667" sap2010:WorkflowViewState.IdRef="ExcelReadCell_1" SheetName="Overview">
+                <ui:ExcelInsertDeleteColumns DisplayName="Insert/Delete Columns" sap:VirtualizedContainerService.HintSize="640.666666666667,22" sap2010:WorkflowViewState.IdRef="ExcelInsertDeleteColumns_1" Mode="Add" NoColumns="2" Position="15" SheetName="OpenBids" />
+                <ui:ExcelWriteCell Cell="O1" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="640.666666666667,52.6666666666667" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_1" SheetName="OpenBids" Text="Quantity" />
+                <ui:ExcelWriteCell Cell="P1" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="640.666666666667,52.6666666666667" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_2" SheetName="OpenBids" Text="UOM" />
+                <ui:ExcelReadCell Cell="C8" DisplayName="Read Cell" sap:VirtualizedContainerService.HintSize="640.666666666667,52.6666666666667" sap2010:WorkflowViewState.IdRef="ExcelReadCell_1" SheetName="Overview">
                   <ui:ExcelReadCell.Result>
                     <OutArgument x:TypeArguments="x:Double">[totcount]</OutArgument>
                   </ui:ExcelReadCell.Result>
                 </ui:ExcelReadCell>
-                <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="476,62.6666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[&quot;totcount = &quot; + totcount.ToString]" />
-                <ui:ExcelWriteCell Cell="[&quot;P2:P&quot;+(totcount+1).ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="476,52.6666666666667" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_4" SheetName="OpenBids" Text="Person" />
-                <ui:ExcelWriteCell Cell="[&quot;O2:O&quot;+(totcount+1).ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="476,52.6666666666667" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_3" SheetName="OpenBids" Text="=RANDBETWEEN(20,400)" />
-                <ui:ExcelReadRange AddHeaders="True" DataTable="[dt_Qty]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="476,52.6666666666667" sap2010:WorkflowViewState.IdRef="ExcelReadRange_1" SheetName="OpenBids">
+                <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="640.666666666667,62.6666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[&quot;totcount = &quot; + totcount.ToString]" />
+                <ui:ExcelWriteCell Cell="[&quot;P2:P&quot;+(totcount+1).ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="640.666666666667,52.6666666666667" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_4" SheetName="OpenBids" Text="Person" />
+                <ui:ExcelWriteCell Cell="[&quot;O2:O&quot;+(totcount+1).ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="640.666666666667,52.6666666666667" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_3" SheetName="OpenBids" Text="=RANDBETWEEN(20,400)" />
+                <ui:ExcelReadRange AddHeaders="True" DataTable="[dt_Qty]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="640.666666666667,52.6666666666667" sap2010:WorkflowViewState.IdRef="ExcelReadRange_1" SheetName="OpenBids">
                   <ui:ExcelReadRange.Range>
                     <InArgument x:TypeArguments="x:String">
                       <Literal x:TypeArguments="x:String" Value="" />
                     </InArgument>
                   </ui:ExcelReadRange.Range>
                 </ui:ExcelReadRange>
-                <ui:ExcelWriteRange AddHeaders="True" DataTable="[dt_Qty]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="476,52.6666666666667" sap2010:WorkflowViewState.IdRef="ExcelWriteRange_3" SheetName="OpenBids">
+                <ui:ExcelWriteRange AddHeaders="True" DataTable="[dt_Qty]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="640.666666666667,52.6666666666667" sap2010:WorkflowViewState.IdRef="ExcelWriteRange_3" SheetName="OpenBids">
                   <ui:ExcelWriteRange.StartingCell>
                     <InArgument x:TypeArguments="x:String">
                       <Literal x:TypeArguments="x:String" Value="" />
                     </InArgument>
                   </ui:ExcelWriteRange.StartingCell>
                 </ui:ExcelWriteRange>
-                <ui:ExcelCopyPasteRange CopyItems="Value" DestinationCell="[&quot;A1:Q&quot;+(totcount+1).ToString]" DestinationSheet="Top5" DisplayName="Copy Range" sap:VirtualizedContainerService.HintSize="476,22" sap2010:WorkflowViewState.IdRef="ExcelCopyPasteRange_6" SheetName="OpenBids" SourceRange="[&quot;A1:Q&quot;+(totcount+1).ToString]" />
-                <Sequence DisplayName="Desktop - Data Visualization" sap:VirtualizedContainerService.HintSize="476,69.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_47">
+                <ui:ExcelCopyPasteRange CopyItems="Value" DestinationCell="[&quot;A1:Q&quot;+(totcount+1).ToString]" DestinationSheet="Top5" DisplayName="Copy Range" sap:VirtualizedContainerService.HintSize="640.666666666667,22" sap2010:WorkflowViewState.IdRef="ExcelCopyPasteRange_6" SheetName="OpenBids" SourceRange="[&quot;A1:Q&quot;+(totcount+1).ToString]" />
+                <Sequence DisplayName="Desktop - Data Visualization" sap:VirtualizedContainerService.HintSize="640.666666666667,2113.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_47">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <Sequence DisplayName="Desktop" sap:VirtualizedContainerService.HintSize="476,576.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_51">
+                  <Sequence DisplayName="Desktop" sap:VirtualizedContainerService.HintSize="598.666666666667,2021.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_51">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         <x:Boolean x:Key="IsPinned">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach Window 'Bids Excel Xlmain'" sap:VirtualizedContainerService.HintSize="434,484.666666666667" sap2010:WorkflowViewState.IdRef="WindowScope_13" InformativeScreenshot="1e72832aa96af14ee888b9b33ff5c7af" Selector="&lt;wnd app='excel.exe' cls='XLMAIN' title='Bids* - Excel' /&gt;">
+                    <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach Window 'Bids Excel Xlmain'" sap:VirtualizedContainerService.HintSize="556.666666666667,1836.66666666667" sap2010:WorkflowViewState.IdRef="WindowScope_13" InformativeScreenshot="1e72832aa96af14ee888b9b33ff5c7af" Selector="&lt;wnd app='excel.exe' cls='XLMAIN' title='Bids* - Excel' /&gt;">
                       <ui:WindowScope.Body>
                         <ActivityAction x:TypeArguments="x:Object">
                           <ActivityAction.Argument>
                             <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
                           </ActivityAction.Argument>
-                          <Sequence sap:VirtualizedContainerService.HintSize="284,298.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_64">
+                          <Sequence sap:VirtualizedContainerService.HintSize="522.666666666667,1650.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_64">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 <x:Boolean x:Key="IsPinned">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <Sequence sap:VirtualizedContainerService.HintSize="242,206.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_52">
+                            <Sequence sap:VirtualizedContainerService.HintSize="480.666666666667,1558.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_52">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                   <x:Boolean x:Key="IsPinned">True</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="MaximizeWindow_5" />
-                              <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="200,52.6666666666667" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+                              <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="438.666666666667,22" sap2010:WorkflowViewState.IdRef="MaximizeWindow_5" />
+                              <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="438.666666666667,1404.66666666667" sap2010:WorkflowViewState.IdRef="TryCatch_1">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                                 <TryCatch.Try>
-                                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="200,69.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_49">
+                                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,1166.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_49">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">True</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
-                                    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'header item  Select All'" sap:VirtualizedContainerService.HintSize="200,52.6666666666667" sap2010:WorkflowViewState.IdRef="Click_90" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+                                    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'header item  Select All'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_90" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
                                       <ui:Click.CursorPosition>
                                         <ui:CursorPosition OffsetX="15" OffsetY="7" Position="TopLeft" />
                                       </ui:Click.CursorPosition>
@@ -258,8 +262,13 @@
                                           </ui:Target.WaitForReady>
                                         </ui:Target>
                                       </ui:Click.Target>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
                                     </ui:Click>
-                                    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'Button  Wrap Text'" sap:VirtualizedContainerService.HintSize="200,52.6666666666667" sap2010:WorkflowViewState.IdRef="Click_91" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+                                    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'Button  Wrap Text'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_91" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
                                       <ui:Click.CursorPosition>
                                         <ui:CursorPosition OffsetX="25" OffsetY="24" Position="TopLeft" />
                                       </ui:Click.CursorPosition>
@@ -273,8 +282,13 @@
                                           </ui:Target.WaitForReady>
                                         </ui:Target>
                                       </ui:Click.Target>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
                                     </ui:Click>
-                                    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'Button  Wrap Text'" sap:VirtualizedContainerService.HintSize="200,52.6666666666667" sap2010:WorkflowViewState.IdRef="Click_92" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+                                    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'Button  Wrap Text'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_92" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
                                       <ui:Click.CursorPosition>
                                         <ui:CursorPosition OffsetX="24" OffsetY="23" Position="TopLeft" />
                                       </ui:Click.CursorPosition>
@@ -288,8 +302,13 @@
                                           </ui:Target.WaitForReady>
                                         </ui:Target>
                                       </ui:Click.Target>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
                                     </ui:Click>
-                                    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'Sheet Tab  Top5'" sap:VirtualizedContainerService.HintSize="200,52.6666666666667" sap2010:WorkflowViewState.IdRef="Click_93" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+                                    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'Sheet Tab  Top5'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_93" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
                                       <ui:Click.CursorPosition>
                                         <ui:CursorPosition OffsetX="33" OffsetY="10" Position="TopLeft" />
                                       </ui:Click.CursorPosition>
@@ -303,8 +322,13 @@
                                           </ui:Target.WaitForReady>
                                         </ui:Target>
                                       </ui:Click.Target>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
                                     </ui:Click>
-                                    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'Column Header  O'" sap:VirtualizedContainerService.HintSize="200,52.6666666666667" sap2010:WorkflowViewState.IdRef="Click_94" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+                                    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'Column Header  O'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_94" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
                                       <ui:Click.CursorPosition>
                                         <ui:CursorPosition OffsetX="29" OffsetY="13" Position="TopLeft" />
                                       </ui:Click.CursorPosition>
@@ -318,8 +342,13 @@
                                           </ui:Target.WaitForReady>
                                         </ui:Target>
                                       </ui:Click.Target>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
                                     </ui:Click>
-                                    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'Menu Item  Sort &amp; Filter'" sap:VirtualizedContainerService.HintSize="200,52.6666666666667" sap2010:WorkflowViewState.IdRef="Click_95" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+                                    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'Menu Item  Sort &amp; Filter'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_95" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
                                       <ui:Click.CursorPosition>
                                         <ui:CursorPosition OffsetX="40" OffsetY="15" Position="TopLeft" />
                                       </ui:Click.CursorPosition>
@@ -333,8 +362,13 @@
                                           </ui:Target.WaitForReady>
                                         </ui:Target>
                                       </ui:Click.Target>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
                                     </ui:Click>
-                                    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'Menu Item'" sap:VirtualizedContainerService.HintSize="200,52.6666666666667" sap2010:WorkflowViewState.IdRef="Click_96" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+                                    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'Menu Item'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_96" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
                                       <ui:Click.CursorPosition>
                                         <ui:CursorPosition OffsetX="47" OffsetY="15" Position="TopLeft" />
                                       </ui:Click.CursorPosition>
@@ -351,40 +385,46 @@
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">True</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
                                     </ui:Click>
-                                    <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach Window 'SortWarni Bosa_sdm_'" sap:VirtualizedContainerService.HintSize="200,52.6666666666667" sap2010:WorkflowViewState.IdRef="WindowScope_18" Selector="&lt;wnd app='excel.exe' cls='XLMAIN' title='Bids* - Excel' /&gt;">
+                                    <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach Window 'SortWarni Bosa_sdm_'" sap:VirtualizedContainerService.HintSize="334,52.6666666666667" sap2010:WorkflowViewState.IdRef="WindowScope_18" Selector="&lt;wnd app='excel.exe' cls='XLMAIN' title='Bids* - Excel' /&gt;">
                                       <ui:WindowScope.Body>
                                         <ActivityAction x:TypeArguments="x:Object">
                                           <ActivityAction.Argument>
                                             <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
                                           </ActivityAction.Argument>
-                                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="200,69.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_61">
+                                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,198" sap2010:WorkflowViewState.IdRef="Sequence_61">
                                             <sap:WorkflowViewStateService.ViewState>
                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                               </scg:Dictionary>
                                             </sap:WorkflowViewStateService.ViewState>
-                                            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'excel.exe  Sort Warning'" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="Click_108" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+                                            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'excel.exe  Sort Warning'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_108" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
                                               <ui:Click.CursorPosition>
                                                 <ui:CursorPosition OffsetX="289" OffsetY="167" Position="TopLeft" />
                                               </ui:Click.CursorPosition>
                                               <ui:Click.Target>
-                                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="c873e394-1d4c-4a1e-ac1e-824bcbac78a7" InformativeScreenshot="c1f5de3383ce33746eb718731fab6ef5" TimeoutMS="3000">
+                                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c873e394-1d4c-4a1e-ac1e-824bcbac78a7" InformativeScreenshot="c1f5de3383ce33746eb718731fab6ef5" Selector="&lt;wnd app='excel.exe' cls='bosa_sdm_XL9' title='Sort Warning' /&gt;" TimeoutMS="3000">
                                                   <ui:Target.WaitForReady>
                                                     <InArgument x:TypeArguments="ui:WaitForReady" />
                                                   </ui:Target.WaitForReady>
                                                 </ui:Target>
                                               </ui:Click.Target>
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
                                             </ui:Click>
                                           </Sequence>
                                         </ActivityAction>
                                       </ui:WindowScope.Body>
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
@@ -639,9 +679,16 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:WindowScope>
+                    <ui:ExcelDeleteRange sap2010:Annotation.AnnotationText="Delete rows after the top-10" DisplayName="Delete Range" sap:VirtualizedContainerService.HintSize="556.666666666667,52.6666666666667" sap2010:WorkflowViewState.IdRef="ExcelDeleteRange_3" Range="[&quot;A12:Q&quot;+(totcount+1).ToString]" SheetName="Top5" ShiftCells="False" ShiftOption="ShiftUp">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ui:ExcelDeleteRange>
                   </Sequence>
                 </Sequence>
-                <ui:ExcelWriteRange AddHeaders="True" DataTable="[dt_csv2]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="476,86.6666666666667" sap2010:WorkflowViewState.IdRef="ExcelWriteRange_2" SheetName="Awarded">
+                <ui:ExcelWriteRange AddHeaders="True" DataTable="[dt_csv2]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="640.666666666667,52.6666666666667" sap2010:WorkflowViewState.IdRef="ExcelWriteRange_2" SheetName="Awarded">
                   <ui:ExcelWriteRange.StartingCell>
                     <InArgument x:TypeArguments="x:String">
                       <Literal x:TypeArguments="x:String" Value="" />
@@ -650,33 +697,38 @@
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </ui:ExcelWriteRange>
-                <Sequence DisplayName="Desktop -Overview Tab" sap:VirtualizedContainerService.HintSize="476,422.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_54">
+                <Sequence DisplayName="Desktop -Overview Tab" sap:VirtualizedContainerService.HintSize="640.666666666667,69.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_54">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach Window 'Bidsxlsx  Xlmain'" sap:VirtualizedContainerService.HintSize="434,330.666666666667" sap2010:WorkflowViewState.IdRef="WindowScope_16" InformativeScreenshot="40f70c72842eb0d80ff66577fe821189" Selector="&lt;wnd app='excel.exe' cls='XLMAIN' omit:title='Bids.xlsx - Excel' /&gt;">
+                  <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach Window 'Bidsxlsx  Xlmain'" sap:VirtualizedContainerService.HintSize="514.666666666667,1210" sap2010:WorkflowViewState.IdRef="WindowScope_16" InformativeScreenshot="40f70c72842eb0d80ff66577fe821189" Selector="&lt;wnd app='excel.exe' cls='XLMAIN' omit:title='Bids.xlsx - Excel' /&gt;">
                     <ui:WindowScope.Body>
                       <ActivityAction x:TypeArguments="x:Object">
                         <ActivityAction.Argument>
                           <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
                         </ActivityAction.Argument>
-                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="242,144.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_55">
+                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="480.666666666667,1024" sap2010:WorkflowViewState.IdRef="Sequence_55">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                              <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="200,52.6666666666667" sap2010:WorkflowViewState.IdRef="TryCatch_3">
+                          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="438.666666666667,932" sap2010:WorkflowViewState.IdRef="TryCatch_3">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
                             <TryCatch.Try>
-                              <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'Sheet Tab  Overview'" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="Click_99" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+                              <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'Sheet Tab  Overview'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_99" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
                                 <ui:Click.CursorPosition>
                                   <ui:CursorPosition OffsetX="34" OffsetY="9" Position="TopLeft" />
                                 </ui:Click.CursorPosition>
@@ -690,7 +742,7 @@
                               </ui:Click>
                             </TryCatch.Try>
                             <TryCatch.Catches>
-                              <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="403.2,505.6" sap2010:WorkflowViewState.IdRef="Catch`1_3">
+                              <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404.666666666667,506" sap2010:WorkflowViewState.IdRef="Catch`1_3">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -701,14 +753,20 @@
                                   <ActivityAction.Argument>
                                     <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
                                   </ActivityAction.Argument>
-                                  <Sequence sap:VirtualizedContainerService.HintSize="375.2,435.2" sap2010:WorkflowViewState.IdRef="Sequence_63">
+                                  <Sequence sap:VirtualizedContainerService.HintSize="376,435.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_63">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
-                                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="333.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Warn" Message="[&quot;Warn: 'Overview' not found. Incompatible Excel version. Trying alternative method.&quot;]" />
-                                    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'page tab  Overview'" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="Click_110" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,94.6666666666667" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Warn" Message="[&quot;Warn: 'Overview' not found. Incompatible Excel version. Trying alternative method.&quot;]">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </ui:LogMessage>
+                                    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'page tab  Overview'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_110" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
                                       <ui:Click.CursorPosition>
                                         <ui:CursorPosition Position="Center">
                                           <ui:CursorPosition.OffsetX>
@@ -729,8 +787,13 @@
                                           </ui:Target.WaitForReady>
                                         </ui:Target>
                                       </ui:Click.Target>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
                                     </ui:Click>
-                                    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="333.6,62.4" sap2010:WorkflowViewState.IdRef="WriteLine_3" Text="Alternative method ends successfully" />
+                                    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="334,62.6666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_3" Text="Alternative method ends successfully" />
                                   </Sequence>
                                 </ActivityAction>
                               </Catch>
@@ -741,13 +804,13 @@
                     </ui:WindowScope.Body>
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </ui:WindowScope>
                 </Sequence>
-                <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="476,22" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="518,22" sap2010:WorkflowViewState.IdRef="Delay_1" />
               </Sequence>
             </Sequence>
           </Sequence>
@@ -761,7 +824,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:ExcelApplicationScope>
-    <ui:CopyFile ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="This code is to duplicate the Bids file with time stamp" Destination="[&quot;output\Bids_&quot;+Now.ToString(&quot;yyMMdd&quot;)+&quot;.xlsx&quot;]" DisplayName="Copy File" sap:VirtualizedContainerService.HintSize="800.666666666667,98" sap2010:WorkflowViewState.IdRef="CopyFile_2" Overwrite="True" Path="output\Bids.xlsx">
+    <ui:CopyFile ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="This code is to duplicate the Bids file with time stamp" Destination="[&quot;output\Bids_&quot;+Now.ToString(&quot;yyMMdd&quot;)+&quot;.xlsx&quot;]" DisplayName="Copy File" sap:VirtualizedContainerService.HintSize="678,96" sap2010:WorkflowViewState.IdRef="CopyFile_2" Overwrite="True" Path="output\Bids.xlsx">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
