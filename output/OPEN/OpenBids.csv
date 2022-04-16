@@ -1,12 +1,17 @@
-﻿ID,Quote Id,Quote,Type
-1,MOESCHETQ22001816,MOESCHETQ22001816,Quotation
-2,MOESCHETQ22001800,MOESCHETQ22001800,Quotation
-3,MOESCHETQ22001802,MOESCHETQ22001802,Quotation
-4,MOESCHETQ22001811,MOESCHETQ22001811,Quotation
-5,NYP000ETQ22000081,NYP000ETQ22000081,Quotation
-6,MOESCHETQ22001805,MOESCHETQ22001805,Quotation
-7,MOESCHETQ22001795,MOESCHETQ22001795,Quotation
-8,MOESCHETQ22001769,MOESCHETQ22001769,Quotation
-9,MOESCHETQ22001791,MOESCHETQ22001791,Quotation
-10,MOESCHETQ22001788,MOESCHETQ22001788,Quotation
-11,MOESCHETQ22001730,MOESCHETQ22001730,Quotation
+﻿ID,Quote Id,Quote,Type,Quote Title,Agency,Published Date,Closing Date,Briefing Date,Contact's Name,Contact's Email,Contact's Tel,Contact's Fax,Contact's Address,Download Link
+1,MOESCHETQ22001816,MOESCHETQ22001816,Quotation,Instructors for Digital Literacy Programme in Queenstown Secondary School,Ministry of Education - Schools,14 Apr 2022 05:50PM,25 Apr 2022 01:00PM,N/A,MR JOSEPH TEO,teo_chai_hong_joseph@moe.edu.sg,64741055,64741295,1 Strathmore Road Singapore 148800,C:\Proj\UiPath\SCT9_Diamond_Project1\output\OPEN\MOESCHETQ22001816
+2,MOESCHETQ22001800,MOESCHETQ22001800,Quotation,2022 English Bridging Support,Ministry of Education - Schools,14 Apr 2022 05:05PM,25 Apr 2022 01:00PM,N/A,GOH PAI SHEN,goh_pai_shen@moe.edu.sg,64582177,64561322,"Catholic High School (Secondary), 9 Bishan Street 22 Singapore 579767",C:\Proj\UiPath\SCT9_Diamond_Project1\output\OPEN\MOESCHETQ22001800
+3,MOESCHETQ22001802,MOESCHETQ22001802,Quotation,ITQ for Supply of Instructor for Mother Tongue Fortnight activities for Students in Beacon Primary School for our P1-P6 students,Ministry of Education - Schools,14 Apr 2022 04:05PM,25 Apr 2022 01:00PM,N/A,MS LEE PEI PEI,lee_pei_pei@moe.edu.sg,67697255,67697244,"Ministry of Education,1, North Buona Vista Drive",C:\Proj\UiPath\SCT9_Diamond_Project1\output\OPEN\MOESCHETQ22001802
+4,MOESCHETQ22001811,MOESCHETQ22001811,Quotation,Supply of Pianist for Choir CCA Programme in Clementi Primary School,Ministry of Education - Schools,14 Apr 2022 03:35PM,25 Apr 2022 01:00PM,N/A,FIONA KWAN,fiona_kwan_lok_mun@moe.edu.sg,67797449,,8 Clementi Avenue 3 Singapore 129903,C:\Proj\UiPath\SCT9_Diamond_Project1\output\OPEN\MOESCHETQ22001811
+5,NYP000ETQ22000081,NYP000ETQ22000081,Quotation,To appoint training service providers for the provision of services to develop and deliver Masterclass Programmes for a period of 2 years,Nanyang Polytechnic,14 Apr 2022 02:19PM,05 May 2022 01:00PM,N/A,JENNY LING / PATRICK PNG,jenny_ling@sirs.edu.sg,64173650 / 65500717,,"Singapore Institute of Retail Studies, 11 Eunos Road 8, Lifelong Learning Institute, #08-02/03/04, Singapore 408601",C:\Proj\UiPath\SCT9_Diamond_Project1\output\OPEN\NYP000ETQ22000081
+6,MOESCHETQ22001805,MOESCHETQ22001805,Quotation,Manpower service for Science Lab 1+1 year,Ministry of Education - Schools,14 Apr 2022 02:05PM,04 May 2022 01:00PM,N/A,MRS EMILY WONG,fang_yoke_cheng_emily@moe.edu.sg,68962054,65632356,90 Bukit Batok East Ave 6 S659762,C:\Proj\UiPath\SCT9_Diamond_Project1\output\OPEN\MOESCHETQ22001805
+7,MOESCHETQ22001795,MOESCHETQ22001795,Quotation,Provision of 3 Days Non-Residential Primary 5 Cohort Outdoor Learning Camp 2022,Ministry of Education - Schools,14 Apr 2022 01:04PM,25 Apr 2022 01:00PM,N/A,RYAN TAY EN HUANG,ryan_tay_en_huang@moe.edu.sg,62886516,62876393,"Holy Innocents' Primary School
+5 Lorong Low Koon
+Singapore 536451",C:\Proj\UiPath\SCT9_Diamond_Project1\output\OPEN\MOESCHETQ22001795
+8,MOESCHETQ22001769,MOESCHETQ22001769,Quotation,Primary 1 and Primary 2 Chinese Weiqi Enrichment Programme in Holy Innocents' Primary School,Ministry of Education - Schools,14 Apr 2022 09:50AM,25 Apr 2022 01:00PM,N/A,LEE SIEW KIAN JOYCE,lee_siew_kian_joyce@schools.gov.sg,62886516,62876393,"Holy Innocents' Primary School
+5 Lorong Low Koon",C:\Proj\UiPath\SCT9_Diamond_Project1\output\OPEN\MOESCHETQ22001769
+9,MOESCHETQ22001791,MOESCHETQ22001791,Quotation,Supply of Instructor for Student Leadership Programme for CHIJ (Katong) Primary: - P4 to P6 Prefects (Trainee & Senior) and P3 to P6 Class Monitors,Ministry of Education - Schools,14 Apr 2022 09:50AM,25 Apr 2022 01:00PM,N/A,MR EDWARD TOH,toh_boon_how@moe.edu.sg,63443072,63459007,"CHIJ (KATONG) PRIMARY
+17 MARTIA ROAD
+SINGAPORE 424821",C:\Proj\UiPath\SCT9_Diamond_Project1\output\OPEN\MOESCHETQ22001791
+10,MOESCHETQ22001788,MOESCHETQ22001788,Quotation,Supply of Instructors for Student Leadership Training Programme in Pioneer Primary School,Ministry of Education - Schools,14 Apr 2022 09:50AM,25 Apr 2022 01:00PM,N/A,MOHAMED ASHIQ S/O AMEERDEEN M,mohamed_ashiq_ameerdeen_m@schools.gov.sg,67932039,,"Pioneer primary school, 31 Jurong West St 91, S649037",C:\Proj\UiPath\SCT9_Diamond_Project1\output\OPEN\MOESCHETQ22001788
+11,MOESCHETQ22001730,MOESCHETQ22001730,Quotation,Supply of Instructors for Primary 1 Programme for Active Learning (PAL) - Dance Module in Peiying Primary School,Ministry of Education - Schools,14 Apr 2022 09:50AM,25 Apr 2022 01:00PM,N/A,MR MOHAMAD IKHWAN BIN MOHAMAD HARON,mohamad_ikhwan_mohamad_haron@schools.gov.sg,62575684,67558802,"Peiying Primary School, 651 Yishun Ring Road, S768687",C:\Proj\UiPath\SCT9_Diamond_Project1\output\OPEN\MOESCHETQ22001730
