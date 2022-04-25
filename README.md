@@ -19,4 +19,5 @@ Diamond Team uses UiPath to extract critical data in the tendering process via G
 | Manual | Automation
 |---|---|
 | 83 mins | 9.5 mins |
-*Based on 11 tenders*
+
+<small><i>Based on 11 tenders</i></small>
