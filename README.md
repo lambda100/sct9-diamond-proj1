@@ -10,7 +10,9 @@ Stakeholders including Bidding Executive; Bidding Manager; Business Development 
 
 ## Solution
 
-Diamond Team uses UiPath to extract critical data in the tendering process via GeBiz website. The strategy is to automate a big bulk of the tendering database by utilizing tools in UiPath such as Data Scrapping and Orchestrator that deploy and manage handling of all the critical information, centralize logging, filing, monitoring and remote control replicating human interactions in tendering process.  This will eliminate resources largely in terms of manpower, and time in extracting information from GeBiz website. The resources saved can then be channeled for decision making and / for submission of tenders so that it minimizes missing of tender deadlines or potential tender opportunities.
+Diamond Team uses **UiPath** to extract critical data in the tendering process via GeBiz website. The strategy is to automate a big bulk of the tendering database by utilizing tools in UiPath such as Data Scrapping and Orchestrator that deploy and manage handling of all the critical information, centralize logging, filing, monitoring and remote control replicating human interactions in tendering process.  This will **eliminate resources largely in terms of manpower, and time in extracting information** from GeBiz website. The resources saved can then be channeled for decision making and / for submission of tenders so that it minimizes missing of tender deadlines or potential tender opportunities.
+
+The team used the **Design Thinking process** (Emphathise – Define – Ideate – Prototype – Test) and recorded this with the aid of Mural. Mural, being a platform that connects teams with a digital whiteboard and collaboration features designed to inspire innovation.
 
 ## Results
 
